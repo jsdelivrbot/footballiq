@@ -1,0 +1,1879 @@
+
+<div class="row">
+
+	<div>
+		<div id="iltermodal" class="modal bottom-sheet modal-fixed-footer">
+			<div class="modal-content">
+				<!-- <h5>
+			<i class="material-icons">perm_data_setting</i> Set Filters
+		</h5> -->
+				<div>
+					<ul id="tabs-swipe-demo" tabs class="tabs">
+						<li class="tab"><a class="active" href="#GENERAL1">Basic
+								Info</a></li>
+						<li class="tab"><a href="#Statistics1">Statistics</a></li>
+						<li class="tab"><a href="#Attributes1">Attributes</a></li>
+					</ul>
+					<div id="GENERAL1" class="col s12">
+						<div class="row container-fluid">
+							
+						</div>
+						<div class="row container-fluid">
+							<div class="col col xl3 x3 m4 s6">
+								<input type="checkbox" id="age-filter"
+									ng-change="showHide(0,fil.att2)" ng-model="fil.att2" /> <label
+									for="age-filter">Age</label>
+							</div>
+							<div class="col col xl3 x3 m4 s6">
+								<input type="checkbox" id="position-filter" ng-model="fil.att1" />
+								<label for="position-filter">Position(s)</label>
+							</div>
+							<div class="col col xl3 x3 m4 s6">
+								<input type="checkbox" id="nationality-filter"
+									ng-model="fil.att8" /> <label for="nationality-filter">Nationality</label>
+							</div>
+							<div class="col col xl3 x3 m4 s6">
+								<input type="checkbox" id="league-filter"
+									ng-model="tab.leaguecheck" /> <label for="league-filter">League</label>
+							</div>
+							<div class="col col xl3 x3 m4 s6">
+								<input type="checkbox" id="League-Country-filter"
+									ng-model="tab.leaguecountrycheck" /> <label
+									for="League-Country-filter">League Country</label>
+							</div>
+							<div class="col col xl3 x3 m4 s6">
+								<input type="checkbox" id="Market-Value-filter"
+									ng-model="fil.marketvaluecheck" ng-change="showHide(8,fil.marketvaluecheck)"  /> <label
+									for="Market-Value-filter">Market Value</label>
+							</div>
+							<div class="col col xl3 x3 m4 s6">
+								<input type="checkbox" id="Contract-Expiring-filter"
+									ng-model="tab.contrackexpcheck" /> <label
+									for="Contract-Expiring-filter">Contract Expiring</label>
+							</div>
+							<div class="col col xl3 x3 m4 s6">
+								<input type="checkbox" id="Height-filter"
+									ng-change="showHide(1,fil.att11)" ng-model="fil.att11" /> <label
+									for="Height-filter">Height</label>
+							</div>
+							<div class="col col xl3 x3 m4 s6">
+								<input type="checkbox" id="Weight-filter"
+									ng-change="showHide(2,fil.att12)" ng-model="fil.att12" /> <label
+									for="Weight-filter">Weight</label>
+							</div>
+						</div>
+					</div>
+					<div id="Statistics1" class="col s12">
+						<div class="row">
+							<span class="col xl12">DEFENCE</span>
+							<div class="col xl3">
+								<div class="col xl12">Defencive Duels</div>
+								<div class="col xl12">
+									<input type="checkbox" id="defduelwonp90-filter" ng-change="showHide(10,fil.defduelwonp90)" ng-model="fil.defduelwonp90" /> <label
+										for="defduelwonp90-filter"> Def Duels Won per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="defDuelLostP90-filter" ng-change="showHide(9,fil.defDuelLostP90)" ng-model="fil.defDuelLostP90" /> <label
+										for="defDuelLostP90-filter"> Def duels Lost per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="defDuelP90-filter"
+										 ng-change="showHide(3,fil.att15)" ng-model="fil.att15" /> <label
+										for="defDuelP90-filter"> Def duels per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="defDuelWonPrcnt-filter"
+										ng-change="showHide(4,fil.att16)" ng-model="fil.att16" /> <label
+										for="defDuelWonPrcnt-filter"> Def duels won %</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Tackles</div>
+								<div class="col xl12">
+									<input type="checkbox" id="tacklesWonP90-filter" ng-change="showHide(11,fil.tacklesWonP90)" ng-model="fil.tacklesWonP90" /> <label
+										for="tacklesWonP90-filter"> Tackles Won per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="tacklesLostP90-filter" ng-change="showHide(12,fil.tacklesLostP90)" ng-model="fil.tacklesLostP90"/> <label
+										for="tacklesLostP90-filter">Tackles Lost per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="tacklesP90-filter"
+										ng-change="showHide(5,fil.att19)" ng-model="fil.att19" /> <label
+										for="tacklesP90-filter">Tackles per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="tacklesSuccessPrcnt-filter"
+										ng-change="showHide(6,fil.att20)" ng-model="fil.att20" /> <label
+										for="tacklesSuccessPrcnt-filter"> Tackle succ %</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Interceptions</div>
+								<div class="col xl12">
+									<input type="checkbox" id="interceptionsP90-filter"
+										ng-change="showHide(7,fil.att21)" ng-model="fil.att21" /> <label
+										for="interceptionsP90-filter">Interceptions per 90</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Succesful Defending</div>
+								<div class="col xl12">
+									<input type="checkbox" id="SuccdefP90-filter"
+										ng-change="showHide(13,fil.SuccdefP90)" ng-model="fil.SuccdefP90"/> <label for="SuccdefP90-filter">Succ
+										def per 90</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Yellow Cards</div>
+								<div class="col xl12">
+									<input type="checkbox" id="YellowCardsP90-filter"
+										ng-change="showHide(14,fil.YellowCardsP90)" ng-model="fil.YellowCardsP90" /> <label for="YellowCardsP90-filter">Yellow
+										cards per 90</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Red Cards</div>
+								<div class="col xl12">
+									<input type="checkbox" id="RedCardsP90-filter"
+										ng-change="showHide(15,fil.RedCardsP90)" ng-model="fil.RedCardsP90" /> <label for="RedCardsP90-filter">Red
+										Cards per 90</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Fouls</div>
+								<div class="col xl12">
+									<input type="checkbox" id="FoulsCardsP90-filter"
+										ng-change="showHide(16,fil.FoulsCardsP90)" ng-model="fil.FoulsCardsP90"  /> <label for="FoulsCardsP90-filter">Fouls
+										per 90</label>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<span class="col xl12">ATTACK</span>
+							<div class="col xl3">
+								<div class="col xl12">Successful Attacking Actions</div>
+								<div class="col xl12">
+									<input type="checkbox" id="SuccAttAcionsP90-filter" /> <label
+										for="SuccAttAcionsP90-filter"> Succ Att. Acions per 90</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Dribbles</div>
+								<div class="col xl12">
+									<input type="checkbox" id="DribblesWonP90-filter" /> <label
+										for="DribblesWonP90-filter"> Dribbles Won per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="DribblesLostP90-filter" /> <label
+										for="DribblesLostP90-filter">Dribbles Lost per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="DribblesP90-filter"
+										ng-model="fil.att38" /> <label for="DribblesP90-filter">Dribbles
+										per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="DribblesSuccPrcnt-filter"
+										ng-model="fil.att39" /> <label for="DribblesSuccPrcnt-filter">
+										Dribbles succ %</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Touches in Box</div>
+								<div class="col xl12">
+									<input type="checkbox" id="TouchesInBoxP90-filter"
+										ng-model="fil.att40" /> <label for="TouchesInBoxP90-filter">Touches
+										in Box per 90</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Shots</div>
+								<div class="col xl12">
+									<input type="checkbox" id="ShotsInTargetP90-filter" /> <label
+										for="ShotsInTargetP90-filter">Shots on target per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="ShotsOffTargetP90-filter" /> <label
+										for="ShotsOffTargetP90-filter">Shots off target per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="ShotsP90-filter"
+										ng-model="fil.att32" /> <label for="ShotsP90-filter">Shots
+										per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="ShotsOnTargetPrcnt-filter"
+										ng-model="fil.att33" /> <label
+										for="ShotsOnTargetPrcnt-filter">Shots on target %</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Goals</div>
+								<div class="col xl12">
+									<input type="checkbox" id="GoalsP90-filter" ng-model="fil.att6"
+										ng-model="fil.att28" /> <label for="GoalsP90-filter">Goals
+										per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="GoalsConvPrcnt-filter"
+										ng-model="fil.att34" /> <label for="GoalsConvPrcnt-filter">Goals
+										conv %</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Assists</div>
+								<div class="col xl12">
+									<input type="checkbox" id="AssistP90-filter"
+										ng-model="fil.att7" /> <label for="AssistP90-filter">Assist
+										per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="AssistRTotalPassesP90-filter" /> <label
+										for="AssistRTotalPassesP90-filter">Assist per 90/
+										Total Passes per 90</label>
+								</div>
+							</div>
+							<div class=" col xl3">
+								<div class="col xl12">Penalties</div>
+								<div class="col xl12">
+									<input type="checkbox" id="PenaltiesTakenP90-filter"
+										ng-model="fil.att66" /> <label for="PenaltiesTakenP90-filter">Penalties
+										taken per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="PenaltiesConvPrcnt-filter"
+										ng-model="fil.att67" /> <label
+										for="PenaltiesConvPrcnt-filter">Penalties conv %</label>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<span class="col xl12">PASSING</span>
+							<div class="col xl3">
+								<div class="col xl12">Passes</div>
+								<div class="col xl12">
+									<input type="checkbox" id="SuccPassP90-filter" /> <label
+										for="SuccPassP90-filter"> Succ pass per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="UnSuccPassP90-filter" /> <label
+										for="UnSuccPassP90-filter"> UnSucc pass per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="PassP90-filter" ng-model="fil.att41" />
+									<label for="PassP90-filter"> Pass per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="PassPrcnt-filter"
+										ng-model="fil.att42" /> <label for="PassPrcnt-filter">
+										Pass Acc %</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="Avgpasslength-filter"
+										ng-model="fil.att58" /> <label for="Avgpasslength-filter">
+										Avg pass length</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Back Passes</div>
+								<div class="col xl12">
+									<input type="checkbox" id="SuccbckpassP90-filter" /> <label
+										for="SuccbckpassP90-filter"> Succ bck pass per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="UnSuccbckpassP90-filter" /> <label
+										for="UnSuccbckpassP90-filter"> UnSucc back pass per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="BckpassP90-filter"
+										ng-model="fil.att45" /> <label for="BckpassP90-filter">
+										Back Pass per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="BckpassPrcnt-filter"
+										ng-model="fil.att36" /> <label for="BckpassPrcnt-filter">
+										Back Pass Acc %</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="BckpassP90RTotalPassP90-filter" />
+									<label for="BckpassP90RTotalPassP90-filter"> Back pass
+										per90/ Total pass per 90</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Lateral Passes</div>
+								<div class="col xl12">
+									<input type="checkbox" id="SuccLatPassP90-filter" /> <label
+										for="SuccLatPassP90-filter"> Succ Lat pass per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="UnSuccLatPassP90-filter" /> <label
+										for="UnSuccLatPassP90-filter"> UnSucc Lat pass per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="LatPassP90-filter"
+										ng-model="fil.att47" /> <label for="LatPassP90-filter">
+										Lat Pass per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="LatPassPrcnt-filter"
+										ng-model="fil.att48" /> <label for="LatPassPrcnt-filter">
+										Lat Pass Acc %</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="LatPassPrcntRTotalPassP90-filter" />
+									<label for="LatPassPrcntRTotalPassP90-filter"> Lateral
+										pass per90/ Total pass per 90</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Forward Passes</div>
+								<div class="col xl12">
+									<input type="checkbox" id="SuccFwdpassP90-filter" /> <label
+										for="SuccFwdpassP90-filter"> Succ Fwd pass per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="UnSuccFwdpassP90-filter" /> <label
+										for="UnSuccFwdpassP90-filter"> UnSucc Fwd pass per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="FwdpassP90-filter"
+										ng-model="fil.att43" /> <label for="FwdpassP90-filter">
+										Fwd Pass per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="FwdpassPrcnt-filter"
+										ng-model="fil.att44" /> <label for="FwdpassPrcnt-filter">
+										Fwd Pass Acc %</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="FwdpassPrcntRTotalPassP90-filter" />
+									<label for="FwdpassPrcntRTotalPassP90-filter"> Forward
+										pass per90/ Total pass per 90</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Final Third Passes</div>
+								<div class="col xl12">
+									<input type="checkbox" id="SuccFinal3rdPassP90-filter" /> <label
+										for="SuccFinal3rdPassP90-filter"> Succ Final 3rd pass
+										per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="UnSuccFinal3rdPassP90-filter" /> <label
+										for="UnSuccFinal3rdPassP90-filter"> UnSucc Final 3rd
+										pass per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="Final3rdPassP90-filter"
+										ng-model="fil.att52" /> <label for="Final3rdPassP90-filter">
+										Final 3rd Pass per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="Final3rdPassPrcnt-filter"
+										ng-model="fil.att53" /> <label for="Final3rdPassPrcnt-filter">
+										Final 3rd Pass Acc %</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox"
+										id="Final3rdPassP90RztotalPassP90-filter" /> <label
+										for="Final3rdPassP90RztotalPassP90-filter"> Final 3rd
+										pass per90/ Total pass per 90</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Smart Passes</div>
+								<div class="col xl12">
+									<input type="checkbox" id="SuccSmartPassesP90-filter" /> <label
+										for="SuccSmartPassesP90-filter"> Succ Smt pass per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="UnSuccSmartPassesP90-filter" /> <label
+										for="UnSuccSmartPassesP90-filter"> UnSucc Smt pass per
+										90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="SmartPassesP90-filter" /> <label
+										for="SmartPassesP90-filter"> Smt Pass per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="SmartPassesPrcnt-filter" /> <label
+										for="SmartPassesPrcnt-filter"> Smt Pass Acc %</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="SmartPassesP90RTotalPassP90-filter" />
+									<label for="SmartPassesP90RTotalPassP90-filter"> Smart
+										pass per90/ Total pass per 90</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Through Passes</div>
+								<div class="col xl12">
+									<input type="checkbox" id="SuccThroughPassesP90-filter" /> <label
+										for="SuccThroughPassesP90-filter"> Succ Thru pass per
+										90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="TUnSuccThroughPassesP90-filter" />
+									<label for="UnSuccThroughPassesP90-filter"> UnSucc Thru
+										pass per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="ThroughPassesP90-filter"
+										ng-model="fil.att56" /> <label for="ThroughPassesP90-filter">
+										Thru Pass per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="ThroughPassesAccPrcnt-filter"
+										ng-model="fil.att57" /> <label
+										for="ThroughPassesAccPrcnt-filter"> Thru Pass Acc %</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox"
+										id="ThroughPassesP90RTotalPassP90-filter" /> <label
+										for="ThroughPassesP90RTotalPassP90-filter"> Through
+										pass per90/ Total pass per 90</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Long Passes</div>
+								<div class="col xl12">
+									<input type="checkbox" id="SuccLongPassesP90-filter" /> <label
+										for="SuccLongPassesP90-filter"> Succ Lng pass per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="UnSuccLongPassesP90-filter" /> <label
+										for="UnSuccLongPassesP90-filter"> UnSucc Lng pass per
+										90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="LongPassesP90-filter"
+										ng-model="fil.att54" /> <label for="LongPassesP90-filter">
+										Lng Pass per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="LongPassesAccPrcnt-filter"
+										ng-model="fil.att55" /> <label
+										for="LongPassesAccPrcnt-filter"> Lng Pass Acc %</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="LongPassesP90RTotalPassP90-filter" />
+									<label for="LongPassesP90RTotalPassP90-filter"> Long
+										pass per90/ Total pass per 90</label>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<span class="col xl12">AERIAL</span>
+							<div class="col xl3">
+								<div class="col xl12">Aerial Duels</div>
+								<div class="col xl12">
+									<input type="checkbox" id="AerialDuelsWonP90-filter" /> <label
+										for="AerialDuelsWonP90-filter"> Aerial Duels won per
+										90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="AerialDuelsLostP90-filter" /> <label
+										for="AerialDuelsLostP90-filter"> Aerial Duels lost per
+										90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="AerialDuelsP90-filter"
+										ng-model="fil.att17" /> <label for="AerialDuelsP90-filter">
+										Aerial Duels per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="AerialDuelsWonPrcnt-filter"
+										ng-model="fil.att18" /> <label
+										for="AerialDuelsWonPrcnt-filter"> Aerial Duels won %</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Head Goals</div>
+								<div class="col xl12">
+									<input type="checkbox" id="HeadGoalsP90-filter"
+										ng-model="fil.att30" /> <label for="HeadGoalsP90-filter">
+										Head Goals per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="HeadGoalsP90RTotalGoalsP90-filter" />
+									<label for="HeadGoalsP90RTotalGoalsP90-filter"> HEad
+										Goals per 90/Total Goals 90</label>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<span class="col xl12">SET PIECES</span>
+							<div class="col xl3">
+								<div class="col xl12">Free Kicks</div>
+								<div class="col xl12">
+									<input type="checkbox" id="FksP90-filter" ng-model="fil.att62" />
+									<label for="FksP90-filter"> Fks per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="FksP90RTotalPassesP90-filter" /> <label
+										for="FksP90RTotalPassesP90-filter"> Fks per 90/Total
+										Passes per 90</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Direct Free Kicks</div>
+								<div class="col xl12">
+									<input type="checkbox" id="DFKsOnTargetP90-filter" /> <label
+										for="DFKsOnTargetP90-filter"> DFKs on target per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="DFKsOffTargetP90-filter" /> <label
+										for="DFKsOffTargetP90-filter"> DFKs off target per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="DFKsP90-filter" ng-model="fil.att63" />
+									<label for="DFKsP90-filter"> DFKs per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="DFKsOnTargetPrcnt-filter"
+										ng-model="fil.att64" /> <label for="DFKsOnTargetPrcnt-filter">
+										DFKs on target %</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Corners</div>
+								<div class="col xl12">
+									<input type="checkbox" id="CornersP90-filter"
+										ng-model="fil.att65" /> <label for="CornersP90-filter">
+										Corners per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="CornersP90RTotalPasses90-filter" />
+									<label for="CornersP90RTotalPasses90-filter"> Corners
+										per 90/Total Passes 90</label>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div id="Attributes1" class="col s12">
+						<div class="row container-fluid">
+							<input type="checkbox" id="test" /> <label for="test">Select
+								All</label>
+						</div>
+						<div class="row">
+							<div class="col xl4">
+								<table class="bordered">
+									<thead>
+										<tr>
+											<th>DEFENCE</th>
+											<th>Productivity</th>
+											<th>Tendency</th>
+											<th>Success</th>
+											<th>Losses</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Defensive Duels</td>
+											<td><input type="checkbox" id="defduelp-filter" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+										<tr>
+											<td>Tackles</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+										<tr>
+											<td>Interceptions</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>Yellow Cards</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+										<tr>
+											<td>Fouls</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+										<tr>
+											<td>Red Cards</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+
+									</tbody>
+								</table>
+							</div>
+							<div class="col xl4">
+								<table class="bordered">
+									<thead>
+										<tr>
+											<th>AERIAL</th>
+											<th>Productivity</th>
+											<th>Tendency</th>
+											<th>Success</th>
+											<th>Losses</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Aerial Duels</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+										<tr>
+											<td>Head Goals</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+										<tr>
+											<td>Interceptions</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+										</tr>
+										<tr>
+											<td>SET PIECES</td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>Free Kicks</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+										<tr>
+											<td>Direct Free Kicks</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+										<tr>
+											<td>Corners</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col xl4">
+								<table class="bordered">
+									<thead>
+										<tr>
+											<th>ATTACK</th>
+											<th>Productivity</th>
+											<th>Tendency</th>
+											<th>Success</th>
+											<th>Losses</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Dribbles</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+										<tr>
+											<td>Touches in Box</td>
+											<td></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>Shots</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+										<tr>
+											<td>Goals</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>Assists</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>Penalties</td>
+											<td></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td></td>
+										</tr>
+
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col xl3">
+								<table class="bordered">
+									<thead>
+										<tr>
+											<th>PASSING</th>
+											<th>Productivity</th>
+											<th>Tendency</th>
+											<th>Success</th>
+											<th>Losses</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Passes</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+										<tr>
+											<td>Back Passes</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+										<tr>
+											<td>Lateral Passes</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+										<tr>
+											<td>Forward Passes</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+										<tr>
+											<td>Final Third Passes</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+										<tr>
+											<td>Smart Passes</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+										<tr>
+											<td>Through Passes</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+										<tr>
+											<td>Long Passes</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+										<tr>
+											<td>Crosses</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<a href="#!"
+					class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+			</div>
+		</div>
+
+	</div>
+	<div>
+		<div id="colmodal" class="modal bottom-sheet modal-fixed-footer">
+			<div class="modal-content">
+				<!-- <h5>
+			<i class="material-icons">perm_data_setting</i> Set Filters
+		</h5> -->
+				<div>
+					<ul id="tabs-swipe-demo" tabs class="tabs">
+						<li class="tab"><a class="active" href="#GENERAL">Basic
+								Info</a></li>
+						<li class="tab"><a href="#Statistics">Statistics</a></li>
+						<li class="tab"><a href="#Attributes">Attributes</a></li>
+					</ul>
+					<div id="GENERAL" class="col s12">
+						<div class="row container-fluid">
+							
+							<div class="col col xl3 x3 m4 s6">
+								<input type="checkbox" id="nationality-check"
+									ng-click="addCollumn()"/> <label for="nationality-check">Nationality</label>
+							</div>
+							<div class="col col xl3 x3 m4 s6">
+								<input type="checkbox" id="League-Country-check"
+									ng-model="tab.leaguecountrycheck" /> <label
+									for="League-Country-check">League Country</label>
+							</div>
+							<div class="col col xl3 x3 m4 s6">
+								<input type="checkbox" id="Market-Value-check"
+									ng-model="tab.marketvaluecheck" /> <label
+									for="Market-Value-check">Market Value</label>
+							</div>
+							<div class="col col xl3 x3 m4 s6">
+								<input type="checkbox" id="Contract-Expiring-check"
+									ng-model="tab.contrackexpcheck" /> <label
+									for="Contract-Expiring-check">Contract Expiring</label>
+							</div>
+							
+						</div>
+					</div>
+					<div id="Statistics" class="col s12">
+						<div class="row">
+							<span class="col xl12">DEFENCE</span>
+							<div class="col xl3">
+								<div class="col xl12">Defencive Duels</div>
+								<div class="col xl12">
+									<input type="checkbox" id="defduelwonp90-check" ng-model="tab.col80"/> <label
+										for="defduelwonp90-check"> Def Duels Won per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="defDuelLostP90-check" ng-model="tab.col81" /> <label
+										for="defDuelLostP90-check"> Def duels Lost per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="defDuelP90-check"
+										ng-model="tab.col15" /> <label for="defDuelP90-check">
+										Def duels per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="defDuelWonPrcnt-check"
+										ng-model="tab.col16" /> <label for="defDuelWonPrcnt-check">
+										Def duels won %</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Tackles</div>
+								<div class="col xl12">
+									<input type="checkbox" id="tacklesWonP90-check" ng-model="tab.col82"/> <label
+										for="tacklesWonP90-check"> Tackles Won per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="tacklesLostP90-check" ng-model="tab.col83" /> <label
+										for="tacklesLostP90-check">Tackles Lost per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="tacklesP90-check"
+										ng-model="tab.col19" /> <label for="tacklesP90-check">Tackles
+										per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="tacklesSuccessPrcnt-check"
+										ng-model="tab.col20" /> <label
+										for="tacklesSuccessPrcnt-check"> Tackle succ %</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Interceptions</div>
+								<div class="col xl12">
+									<input type="checkbox" id="interceptionsP90-check"
+										ng-model="tab.col21" /> <label for="interceptionsP90-check">Interceptions
+										per 90</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Succesful Defending</div>
+								<div class="col xl12">
+									<input type="checkbox" id="SuccdefP90-check"
+										ng-model="tab.col14" /> <label for="SuccdefP90-check">Succ
+										def per 90</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Yellow Cards</div>
+								<div class="col xl12">
+									<input type="checkbox" id="YellowCardsP90-check"
+										ng-model="tab.col24" /> <label for="YellowCardsP90-check">Yellow
+										cards per 90</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Red Cards</div>
+								<div class="col xl12">
+									<input type="checkbox" id="RedCardsP90-check"
+										ng-model="tab.col26" /> <label for="RedCardsP90-check">Red
+										Cards per 90</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Fouls</div>
+								<div class="col xl12">
+									<input type="checkbox" id="FoulsCardsP90-check"
+										ng-model="tab.col22" /> <label for="FoulsCardsP90-check">Fouls
+										per 90</label>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<span class="col xl12">ATTACK</span>
+							<div class="col xl3">
+								<div class="col xl12">Successful Attacking Actions</div>
+								<div class="col xl12">
+									<input type="checkbox" id="SuccAttAcionsP90-check" /> <label
+										for="SuccAttAcionsP90-check"> Succ Att. Acions per 90</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Dribbles</div>
+								<div class="col xl12">
+									<input type="checkbox" id="DribblesWonP90-check" ng-model="tab.col90" /> <label
+										for="DribblesWonP90-check"> Dribbles Won per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="DribblesLostP90-check" ng-model="tab.col91" /> <label
+										for="DribblesLostP90-check">Dribbles Lost per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="DribblesP90-check"
+										ng-model="tab.col38" /> <label for="DribblesP90-check">Dribbles
+										per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="DribblesSuccPrcnt-check"
+										ng-model="tab.col39" /> <label for="DribblesSuccPrcnt-check">
+										Dribbles succ %</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Touches in Box</div>
+								<div class="col xl12">
+									<input type="checkbox" id="TouchesInBoxP90-check"
+										ng-model="tab.col40" /> <label for="TouchesInBoxP90-check">Touches
+										in Box per 90</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Shots</div>
+								<div class="col xl12">
+									<input type="checkbox" id="ShotsInTargetP90-check" ng-model="tab.col70"/> <label
+										for="ShotsInTargetP90-check">Shots on target per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="ShotsOffTargetP90-check" ng-model="tab.col71"/> <label
+										for="ShotsOffTargetP90-check">Shots off target per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="ShotsP90-check" ng-model="tab.col32" />
+									<label for="ShotsP90-check">Shots per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="ShotsOnTargetPrcnt-check"
+										ng-model="tab.col33" /> <label for="ShotsOnTargetPrcnt-check">Shots
+										on target %</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Goals</div>
+								<div class="col xl12">
+									<input type="checkbox" id="GoalsP90-check" ng-model="tab.col6"
+										ng-model="tab.col28" /> <label for="GoalsP90-check">Goals
+										per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="GoalsConvPrcnt-check"
+										ng-model="tab.col34" /> <label for="GoalsConvPrcnt-check">Goals
+										conv %</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Assists</div>
+								<div class="col xl12">
+									<input type="checkbox" id="AssistP90-check" ng-model="tab.col7" />
+									<label for="AssistP90-check">Assist per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="AssistRTotalPassesP90-check" /> <label
+										for="AssistRTotalPassesP90-check">Assist per 90/ Total
+										Passes per 90</label>
+								</div>
+							</div>
+							<div class=" col xl3">
+								<div class="col xl12">Penalties</div>
+								<div class="col xl12">
+									<input type="checkbox" id="PenaltiesTakenP90-check"
+										ng-model="tab.col66" /> <label for="PenaltiesTakenP90-check">Penalties
+										taken per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="PenaltiesConvPrcnt-check"
+										ng-model="tab.col67" /> <label for="PenaltiesConvPrcnt-check">Penalties
+										conv %</label>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<span class="col xl12">PASSING</span>
+							<div class="col xl3">
+								<div class="col xl12">Passes</div>
+								<div class="col xl12">
+									<input type="checkbox" id="SuccPassP90-check" ng-model="tab.col92" /> <label
+										for="SuccPassP90-check"> Succ pass per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="UnSuccPassP90-check" ng-model="tab.col93"/> <label
+										for="UnSuccPassP90-check"> UnSucc pass per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="PassP90-check" ng-model="tab.col41" />
+									<label for="PassP90-check"> Pass per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="PassPrcnt-check"
+										ng-model="tab.col42" /> <label for="PassPrcnt-check">
+										Pass Acc %</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="Avgpasslength-check"
+										ng-model="tab.col58" /> <label for="Avgpasslength-check">
+										Avg pass length</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Back Passes</div>
+								<div class="col xl12">
+									<input type="checkbox" id="SuccbckpassP90-check" ng-model="tab.col106" /> <label
+										for="SuccbckpassP90-check"> Succ bck pass per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="UnSuccbckpassP90-check" ng-model="tab.col107" /> <label
+										for="UnSuccbckpassP90-check"> UnSucc back pass per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="BckpassP90-check"
+										ng-model="tab.col45" /> <label for="BckpassP90-check">
+										Back Pass per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="BckpassPrcnt-check"
+										ng-model="tab.col36" /> <label for="BckpassPrcnt-check">
+										Back Pass Acc %</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="BckpassP90RTotalPassP90-check" /> <label
+										for="BckpassP90RTotalPassP90-check"> Back pass per90/
+										Total pass per 90</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Lateral Passes</div>
+								<div class="col xl12">
+									<input type="checkbox" id="SuccLatPassP90-check" /> <label
+										for="SuccLatPassP90-check"> Succ Lat pass per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="UnSuccLatPassP90-check" /> <label
+										for="UnSuccLatPassP90-check"> UnSucc Lat pass per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="LatPassP90-check"
+										ng-model="tab.col47" /> <label for="LatPassP90-check">
+										Lat Pass per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="LatPassPrcnt-check"
+										ng-model="tab.col48" /> <label for="LatPassPrcnt-check">
+										Lat Pass Acc %</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="LatPassPrcntRTotalPassP90-check" />
+									<label for="LatPassPrcntRTotalPassP90-check"> Lateral
+										pass per90/ Total pass per 90</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Forward Passes</div>
+								<div class="col xl12">
+									<input type="checkbox" id="SuccFwdpassP90-check" ng-model="tab.col104"/> <label
+										for="SuccFwdpassP90-check"> Succ Fwd pass per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="UnSuccFwdpassP90-check" ng-model="tab.col105"/> <label
+										for="UnSuccFwdpassP90-check"> UnSucc Fwd pass per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="FwdpassP90-check"
+										ng-model="tab.col43" /> <label for="FwdpassP90-check">
+										Fwd Pass per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="FwdpassPrcnt-check"
+										ng-model="tab.col44" /> <label for="FwdpassPrcnt-check">
+										Fwd Pass Acc %</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="FwdpassPrcntRTotalPassP90-check" />
+									<label for="FwdpassPrcntRTotalPassP90-check"> Forward
+										pass per90/ Total pass per 90</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Final Third Passes</div>
+								<div class="col xl12">
+									<input type="checkbox" id="SuccFinal3rdPassP90-check"  ng-model="tab.col100"/> <label
+										for="SuccFinal3rdPassP90-check"> Succ Final 3rd pass
+										per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="UnSuccFinal3rdPassP90-check"  ng-model="tab.col101"/> <label
+										for="UnSuccFinal3rdPassP90-check"> UnSucc Final 3rd
+										pass per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="Final3rdPassP90-check"
+										ng-model="tab.col52" /> <label for="Final3rdPassP90-check">
+										Final 3rd Pass per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="Final3rdPassPrcnt-check"
+										ng-model="tab.col53" /> <label for="Final3rdPassPrcnt-check">
+										Final 3rd Pass Acc %</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="Final3rdPassP90RztotalPassP90-check" />
+									<label for="Final3rdPassP90RztotalPassP90-check"> Final
+										3rd pass per90/ Total pass per 90</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Smart Passes</div>
+								<div class="col xl12">
+									<input type="checkbox" id="SuccSmartPassesP90-check"  ng-model="tab.col98"/> <label
+										for="SuccSmartPassesP90-check"> Succ Smt pass per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="UnSuccSmartPassesP90-check"  ng-model="tab.col99"/> <label
+										for="UnSuccSmartPassesP90-check"> UnSucc Smt pass per
+										90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="SmartPassesP90-check" /> <label
+										for="SmartPassesP90-check"> Smt Pass per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="SmartPassesPrcnt-check" /> <label
+										for="SmartPassesPrcnt-check"> Smt Pass Acc %</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="SmartPassesP90RTotalPassP90-check" />
+									<label for="SmartPassesP90RTotalPassP90-check"> Smart
+										pass per90/ Total pass per 90</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Through Passes</div>
+								<div class="col xl12">
+									<input type="checkbox" id="SuccThroughPassesP90-check" ng-model="tab.col108" /> <label
+										for="SuccThroughPassesP90-check"> Succ Thru pass per
+										90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="TUnSuccThroughPassesP90-check" ng-model="tab.col109"  /> <label
+										for="UnSuccThroughPassesP90-check"> UnSucc Thru pass
+										per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="ThroughPassesP90-check"
+										ng-model="tab.col56" /> <label for="ThroughPassesP90-check">
+										Thru Pass per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="ThroughPassesAccPrcnt-check"
+										ng-model="tab.col57" /> <label
+										for="ThroughPassesAccPrcnt-check"> Thru Pass Acc %</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="ThroughPassesP90RTotalPassP90-check" />
+									<label for="ThroughPassesP90RTotalPassP90-check">
+										Through pass per90/ Total pass per 90</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Long Passes</div>
+								<div class="col xl12">
+									<input type="checkbox" id="SuccLongPassesP90-check"  ng-model="tab.col110"/> <label
+										for="SuccLongPassesP90-check"> Succ Lng pass per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="UnSuccLongPassesP90-check"  ng-model="tab.col111"/> <label
+										for="UnSuccLongPassesP90-check"> UnSucc Lng pass per
+										90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="LongPassesP90-check"
+										ng-model="tab.col54" /> <label for="LongPassesP90-check">
+										Lng Pass per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="LongPassesAccPrcnt-check"
+										ng-model="tab.col55" /> <label for="LongPassesAccPrcnt-check">
+										Lng Pass Acc %</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="LongPassesP90RTotalPassP90-check" />
+									<label for="LongPassesP90RTotalPassP90-check"> Long
+										pass per90/ Total pass per 90</label>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<span class="col xl12">AERIAL</span>
+							<div class="col xl3">
+								<div class="col xl12">Aerial Duels</div>
+								<div class="col xl12">
+									<input type="checkbox" id="AerialDuelsWonP90-check"  ng-model="tab.col112" /> <label
+										for="AerialDuelsWonP90-check"> Aerial Duels won per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="AerialDuelsLostP90-check"  ng-model="tab.col113" /> <label
+										for="AerialDuelsLostP90-check"> Aerial Duels lost per
+										90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="AerialDuelsP90-check"
+										ng-model="tab.col17" /> <label for="AerialDuelsP90-check">
+										Aerial Duels per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="AerialDuelsWonPrcnt-check"
+										ng-model="tab.col18" /> <label
+										for="AerialDuelsWonPrcnt-check"> Aerial Duels won %</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Head Goals</div>
+								<div class="col xl12">
+									<input type="checkbox" id="HeadGoalsP90-check"
+										ng-model="tab.col30" /> <label for="HeadGoalsP90-check">
+										Head Goals per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="HeadGoalsP90RTotalGoalsP90-check" />
+									<label for="HeadGoalsP90RTotalGoalsP90-check"> HEad
+										Goals per 90/Total Goals 90</label>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<span class="col xl12">SET PIECES</span>
+							<div class="col xl3">
+								<div class="col xl12">Free Kicks</div>
+								<div class="col xl12">
+									<input type="checkbox" id="FksP90-check" ng-model="tab.col62" />
+									<label for="FksP90-check"> Fks per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="FksP90RTotalPassesP90-check" /> <label
+										for="FksP90RTotalPassesP90-check"> Fks per 90/Total
+										Passes per 90</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Direct Free Kicks</div>
+								<div class="col xl12">
+									<input type="checkbox" id="DFKsOnTargetP90-check" /> <label
+										for="DFKsOnTargetP90-check"> DFKs on target per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="DFKsOffTargetP90-check" /> <label
+										for="DFKsOffTargetP90-check"> DFKs off target per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="DFKsP90-check" ng-model="tab.col63" />
+									<label for="DFKsP90-check"> DFKs per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="DFKsOnTargetPrcnt-check"
+										ng-model="tab.col64" /> <label for="DFKsOnTargetPrcnt-check">
+										DFKs on target %</label>
+								</div>
+							</div>
+							<div class="col xl3">
+								<div class="col xl12">Corners</div>
+								<div class="col xl12">
+									<input type="checkbox" id="CornersP90-check"
+										ng-model="tab.col65" /> <label for="CornersP90-check">
+										Corners per 90</label>
+								</div>
+								<div class="col xl12">
+									<input type="checkbox" id="CornersP90RTotalPasses90-check" />
+									<label for="CornersP90RTotalPasses90-check"> Corners
+										per 90/Total Passes 90</label>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					
+					<div id="Attributes" class="col s12">
+						<div class="row container-fluid">
+							<input type="checkbox" id="test" /> <label for="test">Select
+								All</label>
+						</div>
+						<div class="row">
+							<div class="col xl4">
+								<table class="bordered">
+									<thead>
+										<tr>
+											<th>DEFENCE</th>
+											<th>Productivity</th>
+											<th>Tendency</th>
+											<th>Success</th>
+											<th>Losses</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Defensive Duels</td>
+											<td><input type="checkbox" id="defduelp-check" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+										<tr>
+											<td>Tackles</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+										<tr>
+											<td>Interceptions</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>Yellow Cards</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+										<tr>
+											<td>Fouls</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+										<tr>
+											<td>Red Cards</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+
+									</tbody>
+								</table>
+							</div>
+							<div class="col xl4">
+								<table class="bordered">
+									<thead>
+										<tr>
+											<th>AERIAL</th>
+											<th>Productivity</th>
+											<th>Tendency</th>
+											<th>Success</th>
+											<th>Losses</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Aerial Duels</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+										<tr>
+											<td>Head Goals</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+										<tr>
+											<td>Interceptions</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+										</tr>
+										<tr>
+											<td>SET PIECES</td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>Free Kicks</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+										<tr>
+											<td>Direct Free Kicks</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+										<tr>
+											<td>Corners</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col xl4">
+								<table class="bordered">
+									<thead>
+										<tr>
+											<th>ATTACK</th>
+											<th>Productivity</th>
+											<th>Tendency</th>
+											<th>Success</th>
+											<th>Losses</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Dribbles</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+										<tr>
+											<td>Touches in Box</td>
+											<td></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>Shots</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+										<tr>
+											<td>Goals</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>Assists</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>Penalties</td>
+											<td></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td></td>
+										</tr>
+
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col xl3">
+								<table class="bordered">
+									<thead>
+										<tr>
+											<th>PASSING</th>
+											<th>Productivity</th>
+											<th>Tendency</th>
+											<th>Success</th>
+											<th>Losses</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Passes</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+										<tr>
+											<td>Back Passes</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+										<tr>
+											<td>Lateral Passes</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+										<tr>
+											<td>Forward Passes</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+										<tr>
+											<td>Final Third Passes</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+										<tr>
+											<td>Smart Passes</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+										<tr>
+											<td>Through Passes</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+										<tr>
+											<td>Long Passes</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+										<tr>
+											<td>Crosses</td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+											<td><input type="checkbox" id="test" /> <label
+												for="test"></label></td>
+										</tr>
+
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<a href="#!"
+					class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+			</div>
+		</div>
+	</div>
+	<ul id="search-nav" class="side-nav">
+		<li><a data-target='iltermodal' modal
+			class="waves-effect waves-light btn"><i class="material-icons">perm_data_setting</i>
+				Set Filters</a></li>
+		<li><a data-target='colmodal' modal
+			class="waves-effect waves-light btn"><i class="material-icons">perm_data_setting</i>
+				Select Columns</a></li>
+		<li><a class='dropdown-button' href='javascript:void(0);'
+			dropdown data-activates='dropdown1'>Current Filters</a>
+			<ul id='dropdown1' class='dropdown-content purple lighten-3'>
+				<li><a data-target='savefilter' modal>Save Filter</a></li>
+				<li><a data-target='loadfilter' modal>Load Filter</a></li>
+				<li class="divider"></li>
+				<li><a href="#!">Reset Filter</a></li>
+			</ul></li>
+		<li><div class="divider"></div></li>
+		<li><a class="subheader">Search Criteria</a></li>
+		<li><a ng-click="getSearchQuery()"
+			class="waves-effect waves-light btn"><i class="material-icons">done</i>
+				Refresh Search</a></li>
+		<li><div class="divider"></div></li>
+		<fiter-criteria></fiter-criteria>
+		<li><div class="divider"></div></li>
+	</ul>
+	<div class="clearfix">
+		<div class="row padding-10">
+			<div class="col x1">
+			<a href="#" class="button-collapse" data-activates="search-nav"
+						data-sidenav="right" data-menuwidth="300" data-closeonclick="false">
+				<div class="chip z-depth-3">
+					
+						<i class="tiny material-icons">settings_input_component</i>Filter
+					
+				</div>
+				</a>
+			</div>
+			<div class="col x2"></div>
+			<div class=" right #eceff1 blue-grey lighten-5 padding-1 roundedbordr z-depth-3">
+				<!-- <h5 class="increaseweight">Search Result</h5> -->
+				<ul class="pagination  padding-1 ">
+					<li class="disabled"><a href="#!"><i
+							class="material-icons">chevron_left</i></a></li>
+					<li ng-repeat="pg in pagelist" ng-class="{'active':pg==pageno}"
+						ng-click="pageChange(pg)"><a>{{pg}}</a></li>
+
+					<li class="waves-effect"><a href="#!"><i
+							class="material-icons">chevron_right</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<search-table></search-table>
+	</div>
+
+<div id="savefilter" class="modal small">
+	<div class="modal-content">
+		<h5>Save Filter</h5>
+		<div class="input-field col s6">
+			<input id="first_name" type="text" class="validate"> <label
+				for="first_name">Filter Name</label>
+		</div>
+	</div>
+	<div class="modal-footer">
+		<a href="#!"
+			class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+	</div>
+</div>
+<div id="loadfilter" class="modal small">
+	<div class="modal-content">
+		<h5 class="center-align">Load Filter</h5>
+		<div class="input-field col s6">
+			<select>
+				<option value="" selected>Choose your option</option>
+				<option value="1">GK Selection Criteria</option>
+				<option value="2">Option 2</option>
+				<option value="3">Option 3</option>
+			</select> <label>Load Saved Filter</label>
+		</div>
+	</div>
+	<div class="modal-footer">
+		<a href="#!"
+			class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+	</div>
+</div>
+

@@ -1,0 +1,120 @@
+.login-img{
+background:  url("../image/bgd.png"); 
+ 
+
+  
+  background-size: cover;}
+  
+  
+  
+  .tabulator-col-content{
+  background-color: #455a64;
+    color: white;
+  }
+  
+  table.striped>tbody>tr:nth-child(odd){
+  background-color: #cfd8dc;
+  }
+  
+    table.striped>tbody>tr:nth-child(even){
+  background-color: #eceff1;
+  }
+   table.striped>tbody>tr:hover{
+  background-color: #80cbc4;
+  }
+  
+  
+  .textcolourwhite{
+  color: white;
+  }
+  .roundedbordr{
+  border-radius: 20px;
+  }
+.spinner{
+	position: fixed;
+	top:50%;
+	left:30%;
+}
+ .padding-10{
+ margin:0px;
+ padding: 10px;
+ 
+ }
+  .padding-1{
+ margin:0px;
+ padding: 1px;
+ 
+ }
+ .increaseweight{
+  font-weight: bold;
+ }
+ .headernav{
+     height: 60px;
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+ }
+ .paddingpprofile{
+     padding-top: 1px;
+ }
+ 
+ .pprofilefont{
+     font-weight: bold;
+    color: snow;
+ }
+ .headermargin{
+    
+ }
+ 
+ .attback{
+ 
+    background-color: beige;
+ 
+ }
+.attsubback{
+ border-radius: 5px;
+       background-color: cadetblue;
+    font-weight: 900;
+ 
+ }
+
+ 
+.tabsi .tab a.active{
+     border: 1px;
+    background-color: darkred;
+    border-radius: 15px;
+     font-weight: bold;
+ }
+  .font-bold{
+  font-weight: bold;
+  }
+  
+ .highlightedcell>tr>td:hover{
+     background-color: lightblue;
+     border-radius: 10px;
+ }
+.highlightedcell>tr{
+	line-height: 0.5;
+}
+ 
+ .tableclass{
+ min-width:100px;
+ }
+  .navlogo-size{
+  height: 64px;
+  }
+  .mywidth{
+  min-width: 100px;
+  }
+  .font-red-error{
+  color: red;
+  }
+  .font-green-succ{
+  color: green;
+  }
+  
+  .sidefixednav{
+      position: fixed;
+    overflow-y: auto;
+    height: 100vh;
+    background-color: aqua;
+  }

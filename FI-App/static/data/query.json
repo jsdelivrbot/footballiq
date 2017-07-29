@@ -1,0 +1,8 @@
+[{name:'Age', id:'age',	sliderid:'tab.col2', minValue: 0, maxValue: 100, options: { floor: 0, ceil: 100, step: 1  }},
+{name:'Height', id:'height', sliderid:'tab.col11', minValue: 0, maxValue: 100, options: { floor: 0, ceil: 100, step: 1  }},
+{name:'Weight', id:'weight', sliderid:'tab.col12', minValue: 0, maxValue: 100, options: { floor: 0, ceil: 100, step: 1  }},
+{name:'Def duels per 90', id:'defensive_duels_avg', sliderid:'tab.col15', minValue: 0, maxValue: 100, options: { floor: 0, ceil: 100, step: 1  }},
+{name:'Def duels won %', id:'defensive_duels_won', sliderid:'tab.col16', minValue: 0, maxValue: 100, options: { floor: 0, ceil: 100, step: 1  }},
+{name:'Tackles per 90', id:'tackle_avg', sliderid:'tab.col19', minValue: 0, maxValue: 100, options: { floor: 0, ceil: 100, step: 1  }},
+{name:'Tackle succ %', id:'successful_tackle_percent', sliderid:'tab.col20', minValue: 0, maxValue: 100, options: { floor: 0, ceil: 100, step: 1  }},
+{name:'Interceptions per 90', id:'interceptions_avg', sliderid:'tab.col21', minValue: 0, maxValue: 100, options: { floor: 0, ceil: 100, step: 1  }}]

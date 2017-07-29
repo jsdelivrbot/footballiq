@@ -1,0 +1,50 @@
+<li>
+<div input-field>
+    <select class="" id="leagueFilter" ng-model="selectleague.value" material-select watch>
+        <option ng-repeat="value in selectleague.choices">{{value.lea.area}}-{{value.lea.comp}}</option>
+    </select>
+    <label>League:</label>
+</div>
+</li>
+
+<li><div class="divider"></div></li>
+<li>
+<div class="col xl12">
+<div input-field>
+    <select class="" id="seaasonfilter" ng-model="selectsea.value" material-select watch>
+        <option selected="selected">Current Season</option>
+          <option >Previous Season</option>
+    </select>
+    <label>Season:</label>
+</div>
+</div>
+</li>
+<li><div class="divider"></div></li>
+<li>
+<div class="col xl10">
+<div input-field> 
+    <input type="text"  ng-model="selectleague.searchname"/>
+   <label>Name:</label>
+</div>
+</div>
+</li>
+<li><div class="divider"></div></li>
+<li>
+<div class="col xl12">
+<div input-field>
+    <select class="" id="positionfilter" ng-model="selectsea.povalue" material-select watch>
+        <option ng-repeat="value in selectleague.pochoices">{{value}}</option>
+    </select>
+    <label>Position:</label>
+</div>
+</div>
+</li>
+
+
+<div class="col xl12" ng-repeat="que in query">
+<li ng-show="que.show" id="{{que.sliderid}}">{{que.name}}
+	({{que.minValue}}-{{que.maxValue}})<rzslider
+		rz-slider-model="que.minValue" rz-slider-high="que.maxValue"
+		rz-slider-options="que.options"></rzslider>
+</li>
+</div>

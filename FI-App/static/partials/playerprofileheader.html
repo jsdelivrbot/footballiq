@@ -1,0 +1,53 @@
+<div class="card-content cyan lighten-2">
+			<div class="row">
+				<div class="center-align font-bold">{{ pprofile.full_name }} -
+					{{pprofile.primary_position}} - {{pprofile.current_team_name}} -
+					{{pprofile.age}}</div>
+			</div>
+			<div class="row  cyan lighten-2 pprofilefont">
+				<div class="col xl2">
+					<div class="col xl12">Name: {{ pprofile.name }}</div>
+					<div class="col xl12">Surname: {{ pprofile.lastname }}</div>
+					<div class="col xl12">DOB: {{ pprofile.birth_date }}</div>
+					<div class="col xl12">Nationality: {{
+						pprofile.birth_country_name }}</div>
+				</div>
+				<div class="col xl2">
+					<div class="col xl12">Height: {{ pprofile.height }}</div>
+					<div class="col xl12">Weight: {{ pprofile.weight }}</div>
+					<div class="col xl12">
+						Positions: <span ng-repeat="pos in pprofile.positions">
+							{{pos}} </span>
+					</div>
+					<div class="col xl12">Primary Position: {{
+						pprofile.primary_position }}</div>
+				</div>
+				<div class="col xl2">
+					<div class="col xl12">Main Foot: {{ pprofile.foot }}</div>
+					<div class="col xl12">Main Foot%: 60</div>
+					<div class="col xl12">Weak Foot: left</div>
+					<div class="col xl12">Weak Foot%: 40</div>
+				</div>
+				<div class="col xl2">
+					<div class="col xl12">Plays For: {{
+						pprofile.current_team_name }}</div>
+					<div class="col xl12">League: {{ pprofile.domestic_competition_name
+						}}</div>
+					<div class="col xl12">Owner: {{ pprofile.owner_tem_name }}</div>
+				</div>
+				<div class="col xl2">
+					<div class="col xl12">Market Value: {{ pprofile.market_value
+						}}</div>
+					<div class="col xl12">Contract Expiring: {{
+						pprofile.contract_expires }}</div>
+				</div>
+				<div class="col xl2">
+					<div class="col xl12">National Caps</div>
+					<div class="col xl12">0 Caps/ 0 Goals</div>
+					<div class="col xl12">Youth Caps</div>
+					<div class="col xl12">0 Caps/ 0 Goals</div>
+				</div>
+			</div>
+			<div class="row  light-blue lighten-3"></div>
+		</div>
+		

@@ -1,0 +1,391 @@
+<div class="row  paddingpprofile">
+	<div class="col xl12 s12 x12 m12">
+		<profile-header></profile-header>
+		<div class="card-tabs">
+			<ul tabs class="tabs tabs-fixed-width">
+				<li class="tab"><a class="active" href="#home">General</a></li>
+				<li class="tab"><a  href="#behaviour">Behaviour</a></li>
+				<li class="tab"><a href="#attrb">Ability</a></li>
+				<li class="tab"><a href="#basic">Stats</a></li>
+				<li class="tab"><a href="#evaluation">Evaluation</a></li>
+				<li class="tab"><a href="#scouting">Scouting</a></li>
+			</ul>
+		</div>
+		<div class="card-content grey lighten-4">
+			<div id="home">
+				<div class="container-fluid">
+					<ul tabs
+						class="tabs tabs-fixed-width #ffd180 orange accent-1 tabsi">
+						<li class="tab"><a class="active" href="#Summary">Summary</a></li>
+						<li class="tab"><a href="#Career">Career History</a></li>
+						<li class="tab"><a href="#Injury">Injury History</a></li>
+						<li class="tab"><a href="#Market">Market Value History</a></li>
+					</ul>
+					<div id="Summary">
+						<div class="row ">
+							<div class="col xl8">
+								<div class="container-fluid">
+									<div class="card #ffcc80 orange lighten-4">
+										<div class="row #e0f2f1 teal lighten-5">
+											<div class="col xl4" input-field>
+												<select class="" ng-model="select1.value" material-select
+													watch>
+													<option ng-repeat="value in select1.choices">{{value}}</option>
+												</select>
+											</div>
+											<div class="col xl4" input-field>
+												<select class="" ng-change="changedsummerytype()" ng-model="select2.value" material-select
+													watch>
+													<option ng-repeat="value in select2.choices">{{value}}</option>
+												</select>
+											</div>
+										</div>
+										<div class="row ">
+											<div class="row " id="tab-overview"
+												ng-if="select2.value == 'Overview'">
+												<div class="col xl3 #d7ccc8 brown lighten-4">
+													<div class="col xl10 attsubback">Passing</div>
+													<div class="col xl2"></div>
+													<div class="col xl10">Passing Ability</div>
+													<div class="col xl2">:{{summerypassing.passingability |number:2}}</div>
+													<div class="col xl10">Passing Threat</div>
+													<div class="col xl2">:{{summerypassing.passingthreat |number:2}}</div>
+													<div class="col xl10">Construction</div>
+													<div class="col xl2">:{{summerypassing.construction |number:2}}</div>
+													<div class="col xl10">Creativity</div>
+													<div class="col xl2">:{{summerypassing.creativity |number:2}}</div>
+												</div>
+												<div class="col xl3 #d7ccc8 brown lighten-4">
+													<div class="col xl10 attsubback">Attack</div>
+													<div class="col xl2"></div>
+													<div class="col xl10">Point of Referance</div>
+													<div class="col xl2">:{{summeryattack.pointofref |number:2}}</div>
+													<div class="col xl10">Outragious Position</div>
+													<div class="col xl2">:{{summeryattack.outragiouspos |number:2}}</div>
+													<div class="col xl10">Shooting Threat</div>
+													<div class="col xl2">:{{summeryattack.shootingthrest |number:2}}</div>
+													<div class="col xl10">Goal Scoring Instinct</div>
+													<div class="col xl2">:{{summeryattack.goalsc | number:2}}</div>
+													<div class="col xl10">1 vs 1</div>
+													<div class="col xl2">:{{summeryattack.onevsone | number:2}}</div>
+												</div>
+												<div class="col xl3 #d7ccc8 brown lighten-4">
+													<div class="col xl10 attsubback">Defence</div>
+													<div class="col xl2"></div>
+													<div class="col xl10">Direct Opponent</div>
+													<div class="col xl2">:{{summerydefence.directopp |number:2}}</div>
+													<div class="col xl10">Space</div>
+													<div class="col xl2">:{{summerydefence.space |number:2}}</div>
+													<div class="col xl10">Duel</div>
+													<div class="col xl2">:{{summerydefence.duel |number:2}}</div>
+												</div>
+												<div class="col xl3 #d7ccc8 brown lighten-4">
+													<div class="col xl10 attsubback">Aerial</div>
+													<div class="col xl2"></div>
+													<div class="col xl10">Aerial Presence</div>
+													<div class="col xl2">:{{summeryaerial.aerialpresence |number:2}}</div>
+													<div class="col xl10">Aerial Threat</div>
+													<div class="col xl2">:{{summeryaerial.aerialthreat |number:2}}</div>
+												</div>
+												<div class="col xl3 #d7ccc8 brown lighten-4">
+													<div class="col xl10 attsubback">Set Pieces</div>
+													<div class="col xl2"></div>
+													<div class="col xl10">Freekicks</div>
+													<div class="col xl2">:{{summerysetpieces.freekicks |number:2}}</div>
+													<div class="col xl10">Direct Freekick</div>
+													<div class="col xl2">:{{summerysetpieces.directfreekick |number:2}}</div>
+													<div class="col xl10">Corner</div>
+													<div class="col xl2">:{{summerysetpieces.corner |number:2}}</div>
+													<div class="col xl10">Penalties</div>
+													<div class="col xl2">:{{summerysetpieces.penalties |number:2}}</div>
+												</div>
+											</div>
+											<div class="row " id="tab-passing"
+												ng-if="select2.value == 'Passing'">
+												<div class="col xl3 #d7ccc8 brown lighten-4">
+													<div class="col xl10 attsubback">Passing Ability</div>
+													<div class="col xl10">Passes</div>
+													<div class="col xl2">:{{pprofile.att_passes_avg |number:2}}</div>
+													<div class="col xl10">Short Medium Passes</div>
+													<div class="col xl2">:{{pprofile.att_short_medium_pass_avg |number:2}}</div>
+													<div class="col xl10">Long Passes</div>
+													<div class="col xl2">:{{pprofile.att_long_passes_avg |number:2}}</div>
+													<div class="col xl10">Forward Passes</div>
+													<div class="col xl2">:{{pprofile.att_forward_passes_avg |number:2}}</div>
+													<div class="col xl10">Passes to Final Third</div>
+													<div class="col xl2">:{{pprofile.att_passes_to_final_third_avg |number:2}}</div>
+												</div>
+												<div class="col xl3 #d7ccc8 brown lighten-4">
+													<div class="col xl10 attsubback">Passing Threat</div>
+													<div class="col xl2"></div>
+													<div class="col xl10">Passes to Penalty Area</div>
+													<div class="col xl2">:{{pprofile.att_pass_to_penalty_area_avg |number:2}}</div>
+													<div class="col xl10">Key Passes</div>
+													<div class="col xl2">:{{pprofile.att_key_passes_avg |number:2}}</div>
+													<div class="col xl10">Crosses</div>
+													<div class="col xl2">:{{pprofile.att_crosses_avg |number:2}}</div>
+													<div class="col xl10">Through Passes</div>
+													<div class="col xl2">:{{pprofile.att_through_passes_avg |number:2}}</div>
+													<div class="col xl10">Smart Passes</div>
+													<div class="col xl2">:{{pprofile.att_smart_passes_avg |number:2}}</div>
+													<div class="col xl10">Assists</div>
+													<div class="col xl2">:{{pprofile.att_assists_avg |number:2}}</div>
+												</div>
+												<div class="col xl3 #d7ccc8 brown lighten-4">
+													<div class="col xl10 attsubback">Construction</div>
+													<div class="col xl10">Through Passes</div>
+													<div class="col xl2">:{{pprofile.att_through_passes_avg |number:2}}</div>
+													<div class="col xl10">Smart Passes</div>
+													<div class="col xl2">:{{pprofile.att_smart_passes_avg |number:2}}</div>
+													<div class="col xl10">Forward Passes</div>
+													<div class="col xl2">:{{pprofile.att_forward_passes_avg |number:2}}</div>
+													<div class="col xl10">Passes to Final Third</div>
+													<div class="col xl2">:{{pprofile.att_passes_to_final_third_avg |number:2}}</div>
+													<div class="col xl10">Vertical Passes</div>
+													<div class="col xl2">:{{pprofile.att_vertical_passes_avg |number:2}}</div>
+												</div>
+												<div class="col xl3 #d7ccc8 brown lighten-4">
+													<div class="col xl10 attsubback">Creativity</div>
+													<div class="col xl10">Through Passes</div>
+													<div class="col xl2">:{{pprofile.att_through_passes_avg |number:2}}</div>
+													<div class="col xl10">Crosses</div>
+													<div class="col xl2">:{{pprofile.att_crosses_avg |number:2}}</div>
+													<div class="col xl10">Smart Passes</div>
+													<div class="col xl2">:{{pprofile.att_smart_passes_avg |number:2}}</div>
+													<div class="col xl10">Passes to Final Third</div>
+													<div class="col xl2">:{{pprofile.att_passes_to_final_third_avg |number:2}}</div>
+												</div>
+											</div>
+											<div class="row " id="tab-attack"
+												ng-if="select2.value == 'Attack'">
+												<div class="col xl3 #d7ccc8 brown lighten-4">
+													<div class="col xl10 attsubback">Point Of Reference</div>
+													<div class="col xl10">Point Of Reference</div>
+													<div class="col xl2">:{{pprofile.att_received_pass_avg |number:2}}</div>
+													<div class="col xl10">Attacking Action</div>
+													<div class="col xl2">:{{pprofile.att_successful_attacking_actions_avg |number:2}}</div>
+													<div class="col xl10">Linkup Play</div>
+													<div class="col xl2">:{{pprofile.att_linkup_plays_avg |number:2}}</div>
+												</div>
+												<div class="col xl3 #d7ccc8 brown lighten-4">
+													<div class="col xl10 attsubback">Dangerous Position</div>
+													<div class="col xl10">Received Dangerous Pass</div>
+													<div class="col xl2">:{{pprofile.att_received_dangerous_pass_avg |number:2}}</div>
+													<div class="col xl10">Touches in Box</div>
+													<div class="col xl2">:{{pprofile.att_touch_in_box_avg |number:2}}</div>
+													<div class="col xl10">Ball Entry in Final Third</div>
+													<div class="col xl2">:{{pprofile.att_passes_to_final_third_avg |number:2}}</div>
+													<div class="col xl10">Avg Dribble Distance</div>
+													<div class="col xl2">:{{pprofile.att_average_dribble_distance_from_opponent_goal |number:2}}</div>
+													<div class="col xl10">Shots Avg</div>
+													<div class="col xl2">:{{pprofile.att_shots_avg |number:2}}</div>
+												</div>
+												<div class="col xl3 #d7ccc8 brown lighten-4">
+													<div class="col xl10 attsubback">1 Vs 1</div>
+													<div class="col xl10">Offensive Duels</div>
+													<div class="col xl2">:{{pprofile.att_offensive_duels_avg |number:2}}</div>
+													<div class="col xl10">Dribbles</div>
+													<div class="col xl2">:{{pprofile.att_dribbles_avg |number:2}}</div>
+												</div>
+												<div class="col xl3 #d7ccc8 brown lighten-4">
+													<div class="col xl10 attsubback">Shoot Threat</div>
+													<div class="col xl10">Shooting</div>
+													<div class="col xl2">:{{pprofile.att_shots_avg |number:2}}</div>
+													<div class="col xl10">Shots to near Corner</div>
+													<div class="col xl2">:{{pprofile.att_shot_to_near_corner_avg |number:2}}</div>
+													<div class="col xl10">Shots to far Corner</div>
+													<div class="col xl2">:{{pprofile.att_shot_to_far_corner_avg |number:2}}</div>
+												</div>
+												<div class="col xl3 #d7ccc8 brown lighten-4">
+													<div class="col xl10 attsubback">Goal SC</div>
+													<div class="col xl10">Non Penalty Goal Avg</div>
+													<div class="col xl2">:{{pprofile.att_goals_wilson |number:2}}</div>
+													<div class="col xl10">Goal Conversion %</div>
+													<div class="col xl2">:{{pprofile.att_goal_conversion_percent |number:2}}</div>
+													<div class="col xl10">Goals per 90</div>
+													<div class="col xl2">:{{pprofile.att_goals_avg |number:2}}</div>
+												</div>
+											</div>
+											<div class="row " id="tab-aerial"
+												ng-if="select2.value == 'Aerial'">
+												
+												<div class="col xl3 #d7ccc8 brown lighten-4">
+													<div class="col xl10 attsubback">Aerial Presence</div>
+													<div class="col xl10">Aerial Duels</div>
+													<div class="col xl2">:{{pprofile.att_aerial_duels_avg |number:2}}</div>
+													<div class="col xl10">Field Aerial Duels</div>
+													<div class="col xl2">:{{pprofile.att_field_aerial_duels_avg |number:2}}</div>
+												</div>
+												<div class="col xl3 #d7ccc8 brown lighten-4">
+													<div class="col xl10 attsubback">Aerial Threat</div>
+													<div class="col xl10">Head Shots</div>
+													<div class="col xl2">:{{pprofile.att_head_shots_avg |number:2}}</div>
+													<div class="col xl10">Head Goals</div>
+													<div class="col xl2">:{{pprofile.att_head_goals_avg |number:2}}</div>
+												</div>
+											</div>
+											<div class="row " id="tab-defence"
+												ng-if="select2.value == 'Defence'">
+												<div class="col xl3 #d7ccc8 brown lighten-4">
+													<div class="col xl10 attsubback">Direct</div>
+													<div class="col xl10">Defensive Duels</div>
+													<div class="col xl2">:{{pprofile.att_defensive_duels_avg |number:2}}</div>
+													<div class="col xl10">Tackles</div>
+													<div class="col xl2">:{{pprofile.att_tackle_avg |number:2}}</div>
+													<div class="col xl10">Yellow Cards per Foul</div>
+													<div class="col xl2">:{{pprofile.att_yellow_cards_per_foul |number:2}}</div>
+												</div>
+												<div class="col xl3 #d7ccc8 brown lighten-4">
+													<div class="col xl10 attsubback">Space</div>
+													<div class="col xl2"></div>
+													<div class="col xl10">Clearance</div>
+													<div class="col xl2">:{{pprofile.att_clearance_avg |number:2}}</div>
+													<div class="col xl10">Recoveries</div>
+													<div class="col xl2">:{{pprofile.att_recoveries_avg |number:2}}</div>
+													<div class="col xl10">Missed Balls</div>
+													<div class="col xl2">:{{pprofile.att_missed_balls_avg |number:2}}</div>
+													<div class="col xl10">Blocks</div>
+													<div class="col xl2">:{{pprofile.att_shot_block_avg |number:2}}</div>
+													<div class="col xl10">Interceptions</div>
+													<div class="col xl2">:{{pprofile.att_interceptions_avg |number:2}}</div>
+												</div>
+												<div class="col xl3 #d7ccc8 brown lighten-4">
+													<div class="col xl10 attsubback">Duels</div>
+													<div class="col xl10">DefensiveDuels</div>
+													<div class="col xl2">:{{pprofile.att_defensive_duels_avg |number:2}}</div>
+													<div class="col xl10">Pressing Duels</div>
+													<div class="col xl2">:{{pprofile.att_pressing_duels_avg |number:2}}</div>
+													<div class="col xl10">Loose Balls</div>
+													<div class="col xl2">:{{pprofile.att_loose_ball_duels_avg |number:2}}</div>
+													<div class="col xl10">Duels</div>
+													<div class="col xl2">:{{pprofile.att_duels_avg |number:2}}</div>
+												</div>
+											</div>
+											<div class="row " id="tab-setpieces"
+												ng-if="select2.value == 'Set Pieces'">
+												<div class="col xl3 #d7ccc8 brown lighten-4">
+													<div class="col xl10 attsubback">Free Kicks</div>
+													<div class="col xl2"></div>
+													<div class="col xl10">Free Kicks</div>
+													<div class="col xl2">:{{pprofile.att_free_kicks_taken_avg |number:2}}</div>
+												</div>
+												<div class="col xl3 #d7ccc8 brown lighten-4">
+													<div class="col xl10 attsubback">Direct Free Kicks</div>
+													<div class="col xl10">Direct Free Kicks</div>
+													<div class="col xl2">:{{pprofile.att_direct_free_kicks_taken_avg |number:2}}</div>
+												</div>
+												<div class="col xl3 #d7ccc8 brown lighten-4">
+													<div class="col xl10 attsubback">Corners</div>
+													<div class="col xl10">Corners</div>
+													<div class="col xl2">:{{pprofile.att_corners_taken_avg |number:2}}</div>
+												</div>
+												<div class="col xl3 #d7ccc8 brown lighten-4">
+													<div class="col xl10 attsubback">Penalties</div>
+													<div class="col xl10">Penalties</div>
+													<div class="col xl2">:{{pprofile.att_penalties_taken_avg |number:2}}</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="body" class="col xl4">
+
+								<div id="chart"></div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<beha-viour></beha-viour>
+			<div id="basic">
+				<div class="row">
+					<div class="card col xl4">
+						<p class="col xl12 center-align">Basic Information</p>
+						<span class="col xl12">Name : </span> <span class="col xl12">Surname:
+						</span> <span class="col xl12">DOB: </span> <span class="col xl12">Positions:
+						</span> <span class="col xl12">Nationality: </span> <span
+							class="col xl12">Plays For: </span> <span class="col xl12">League:
+						</span> <span class="col xl12">Owner: </span> <span class="col xl12">Market
+							Value: </span> <span class="col xl12">Contract Expiring: </span> <span
+							class="col xl12">Main Foot: </span> <span class="col xl12">Main
+							Foot %: </span> <span class="col xl12">Weak Foot: </span> <span
+							class="col xl12">Weak Foot %: </span> <span class="col xl12">Height:
+						</span> <span class="col xl12">Weight: </span> <span class="col xl12">&nbsp;
+						</span>
+					</div>
+					<div class="col xl8">
+						<div class="row">
+							<div class="card col xl4">
+								<p class="col xl12 center-align">CAPS & GOALS</p>
+								<span class="col xl12">National Caps </span> <span
+									class="col xl12">0 caps/0 goals </span> <span class="col xl12">Youth
+									Caps </span> <span class="col xl12">0 caps/0 goals </span> <span
+									class="col xl12">&nbsp; </span>
+							</div>
+							<div class="card col xl8">
+								<p class="col xl12 center-align">
+									Injury History <a
+										class="btn-floating btn waves-effect waves-light red right"><i
+										class="material-icons">add</i></a>
+								</p>
+
+								<span class="col xl12">Broken Arm </span> <span class="col xl12">3
+									months off </span> <span class="col xl12">&nbsp; </span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="card col xl4">
+								<div class="card-content">
+									<p class="col xl12 center-align">Market Value Diagram</p>
+									<span class="col xl12">&nbsp; </span> <span class="col xl12">&nbsp;
+									</span>
+								</div>
+							</div>
+							<div class="card col xl8">
+								<div class=" card-content">
+									<p class="col xl12 center-align">
+										Market Value History <a
+											class="btn-floating btn waves-effect waves-light red right"><i
+											class="material-icons">add</i></a>
+									</p>
+
+									<span class="col xl12">&nbsp; </span> <span class="col xl12">&nbsp;
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col xl12">
+						<p class="center-align">Career History
+						<p>
+					</div>
+				</div>
+			</div>
+			<div id="attrb">
+				<div class="row container-fluid">
+					<div id="example-table"></div>
+						</div>
+			</div>
+			<div id="stats">Comming Soon..</div>
+			<div id="evaluation">Comming Soon..</div>
+			<div id="scouting">
+				<div class="collection">
+					<a href="#!" class="collection-item">Scouting Report -
+						22/01/2015</a> <a href="#!" class="collection-item">Scouting
+						Report - 22/01/2015</a> <a href="#!" class="collection-item">Scouting
+						Report - 22/01/2015</a> <a href="#!" class="collection-item">Scouting
+						Report - 22/01/2015</a>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+</div>
+<script type="text/javascript" src="js/script.js"></script>
+
+<script type="text/javascript" src="js/barchart.js"></script>

@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>Minimal example</title>
+
+<!-- Materialize CSS -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+<!-- JavaScript for: jQuery, angular, materialize, and angular-materialize. All of which are needed. -->
+<script type="text/javascript"
+	src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+<script type="text/javascript"
+	src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+<script type="text/javascript"
+	src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.2.2/angular-materialize.min.js"></script>
+	<script type="text/javascript"
+	src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.11/ngStorage.js"></script>
+	<script type="text/javascript"
+	src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-route.js"></script>
+	<script type="text/javascript"
+	src="js/angular-ui-router.js"></script>
+	
+<link href="css/index.css" rel="stylesheet">
+<!-- Your app -->
+<script type="text/javascript" src="js/app.js"></script>
+</head>
+<body ng-app="materializeApp" ng-controller="BodyController">
+	<div class="row container-fluid">
+		<div id="header-div" class="row">
+			<nav>
+				<div class="nav-wrapper">
+					<a href="#!" class="brand-logo "><img class="navlogo-size"
+						src="image/LOGO.jpg"></a> <a href="#"
+						data-activates="mobile-demo" class="button-collapse"><i
+						class="material-icons">menu</i></a>
+					<ul class="right hide-on-med-and-down">
+						<li class="active"><a href="home.html">Search</a></li>
+						<li><a href="stared.html">Stared</a></li>
+					</ul>
+					<ul class="side-nav" id="mobile-demo">
+						<li class="active"><a href="home.html">Search</a></li>
+						<li><a href="stared.html">Stared</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div id="body-div" class="row">
+			<div class="card">
+				<div class="card-content">
+					<h5 class="center-align">John Doe  - Attacking MidFielder  -  Real Madrid</h5>
+				</div>
+				<div class="card-tabs">
+					<ul class="tabs tabs-fixed-width">
+						<li class="tab"><a  class="active" href="#basic">Basic Info</a></li>
+						<li class="tab"><a href="#attrib">Attributes</a></li>
+						<li class="tab"><a href="#stats">Stats</a></li>
+						<li class="tab"><a href="#eval">Evaluation</a></li>
+						<li class="tab"><a href="#scouting">Scouting</a></li>
+					</ul>
+				</div>
+				<div class="card-content grey lighten-4">
+					<div id="basic">Test 1</div>
+					<div id="attrib">Test 2</div>
+					<div id="stats">Test 3</div>
+					<div id="eval">Test 3</div>
+					<div id="scouting">Test 3</div>
+				</div>
+
+			</div>
+
+
+		</div>
+		<div id="footer-div" class="row"></div>
+	</div>
+</body>
+</html>

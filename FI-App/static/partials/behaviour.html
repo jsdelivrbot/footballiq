@@ -1,0 +1,1115 @@
+<div id="behaviour">
+	<div class="row">
+		<ul tabs class="tabs tabs-fixed-width #ffd180 orange accent-1 tabsi">
+			<li class="tab"><a class="active" href="#boverall">Overall</a></li>
+			<li class="tab"><a href="#bInvolvement">Involvement</a></li>
+			<li class="tab"><a href="#bProductivity">Productivity</a></li>
+			<li class="tab"><a href="#bLoss">Losses</a></li>
+			<li class="tab"><a href="#bEfficiency">Efficiency</a></li>
+		</ul>
+		<div id="boverall">
+			<div class="col xl6">
+				<div class="card">
+					<div class="row"></div>
+					<div class="row">
+						<table class="striped highlight centered">
+							<thead class="#1976d2 blue darken-2">
+								<tr>
+									<th>&nbsp;</th>
+									<th>Involvement</th>
+									<th>Productivity</th>
+									<th>Losses</th>
+									<th>Efficiency</th>
+								</tr>
+							</thead>
+							<tbody class="highlightedcell">
+								<tr>
+									<td class="font-bold">Attack</td>
+									<td>{{attackbehv.involv |number:2}}</td>
+									<td>{{attackbehv.productivity |number:2}}</td>
+									<td>{{attackbehv.losses |number:2}}</td>
+									<td>{{attackbehv.efficiency |number:2}}</td>
+								</tr>
+								<tr>
+									<td class="font-bold">Passing</td>
+									<td>{{passingbehv.involv |number:2}}</td>
+									<td>{{passingbehv.productivity |number:2}}</td>
+									<td>{{passingbehv.losses |number:2}}</td>
+									<td>{{passingbehv.efficiency |number:2}}</td>
+								</tr>
+								<tr>
+									<td class="font-bold">Duels</td>
+									<td>{{duelsbehv.involv |number:2}}</td>
+									<td>{{duelsbehv.productivity |number:2}}</td>
+									<td>{{duelsbehv.losses |number:2}}</td>
+									<td>{{duelsbehv.efficiency |number:2}}</td>
+								</tr>
+
+								<tr>
+									<td class="font-bold">Aerial</td>
+									
+									<td>{{aerialsbehv.involv |number:2}}</td>
+									<td>{{aerialsbehv.productivity |number:2}}</td>
+									<td>{{aerialsbehv.losses |number:2}}</td>
+									<td>{{aerialsbehv.efficiency |number:2}}</td>
+								</tr>
+								<tr>
+									<td class="font-bold">Defence</td>
+									<td>{{deffencebehv.involv |number:2}}</td>
+									<td>{{deffencebehv.productivity |number:2}}</td>
+									<td>{{deffencebehv.losses |number:2}}</td>
+									<td>{{deffencebehv.efficiency |number:2}}</td>
+								</tr>
+								<tr>
+									<td class="font-bold">Set Pieces</td>
+									<td>{{setpiecesbehv.involv |number:2}}</td>
+								</tr>
+
+							</tbody>
+						</table>
+
+					</div>
+				</div>
+			</div>
+			<div class="col xl6">
+
+				<canvas id="myChart" width="400" height="400"></canvas>
+
+			</div>
+
+		</div>
+		<div id="bInvolvement">
+			<div class="row"></div>
+			<div class="row" ng-if="involvement_subtab=='biAttack'">
+				<div class="col xl4">
+					<table class="striped highlight centered">
+						<thead class="#1976d2 blue darken-2">
+							<tr>
+								<th>Attack</th>
+								<th>&nbsp;</th>
+							</tr>
+						</thead>
+						<tbody class="highlightedcell">
+							<tr>
+								<td class="font-bold">Attacking Actions</td>
+								<td>{{pprofile.att_successful_attacking_actions_avg |number:2}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Dribbles</td>
+								<td>{{pprofile.att_dribbles_won_90 |number:2}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Offensive Duels</td>
+								<td>{{pprofile.att_offensive_duels_avg |number:2}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Accelerations</td>
+								<td>{{pprofile.att_accelerations_avg |number:2}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Possession Losses</td>
+								<td>{{pprofile.att_losses_avg |number:2}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Own Half Losses</td>
+								<td>{{pprofile.att_own_half_losses_avg |number:2}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Dangerous own half losses</td>
+								<td>{{pprofile.att_dangerous_own_half_losses_avg |number:2}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Point of Reference</td>
+								<td>{{pprofile.att_accelerations_avg |number:2}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Point of Reference Passes</td>
+								<td>{{pprofile.att_received_pass_avg |number:2}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Point of Reference Long Passes</td>
+								<td>{{pprofile.att_received_long_pass_avg |number:2}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Point of Reference Team Percent</td>
+								<td>{{pprofile.att_received_pass_of_team_percent |number:2}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Point of Reference Dangerous Passes</td>
+								<td>{{pprofile.att_received_dangerous_pass_avg |number:2}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Linkup Play</td>
+								<td>{{pprofile.att_linkup_plays_avg |number:2}}</td>
+							</tr>
+
+							<tr>
+								<td class="font-bold">Touch in box</td>
+								<td>{{pprofile.att_touch_in_box_avg |number:2}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Shooting</td>
+								<td>{{pprofile.att_shots |number:2}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Shots Far Corner</td>
+								<td>{{pprofile.att_shot_to_far_corner_avg |number:2}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Shots Near Corner</td>
+								<td>{{pprofile.att_shot_to_near_corner_avg |number:2}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Head Shots</td>
+								<td>{{pprofile.att_head_shots |number:2}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Goals</td>
+								<td>{{pprofile.att_goals_avg |number:2}}</td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="row" ng-if="involvement_subtab=='biDefence'">
+				<div class="col xl4">
+					<table class="striped highlight centered">
+						<thead class="#1976d2 blue darken-2">
+							<tr>
+								<th>Defence</th>
+								<th>&nbsp;</th>
+							</tr>
+						</thead>
+						<tbody class="highlightedcell">
+							<tr>
+								<td class="font-bold">Defensive Actions</td>
+								<td>{{pprofile.att_successful_defensive_actions_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Defensive Duels</td>
+								<td>{{pprofile.att_defensive_duels_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Tackles</td>
+								<td>{{pprofile.att_tackle_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Blocks</td>
+								<td>{{pprofile.att_shot_block_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Interceptions</td>
+								<td>{{pprofile.att_interceptions_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Recoveries</td>
+								<td>{{pprofile.att_recoveries_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Clearances</td>
+								<td>{{pprofile.att_clearance_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Fouls</td>
+								<td>{{pprofile.att_fouls_of_team_percent}}</td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="row" ng-if="involvement_subtab=='biPassing'">
+				<div class="col xl4">
+					<table class="striped highlight centered">
+						<thead class="#1976d2 blue darken-2">
+							<tr>
+								<th>Passing</th>
+								<th>&nbsp;</th>
+							</tr>
+						</thead>
+						<tbody class="highlightedcell">
+							<tr>
+								<td class="font-bold">Passes</td>
+								<td>{{pprofile.att_passes_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Short - Medium Passes</td>
+								<td>{{pprofile.att_short_medium_pass_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Long Passes</td>
+								<td>{{pprofile.att_long_passes_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Smart Passes</td>
+								<td>{{pprofile.att_smart_passes_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Through Passes</td>
+								<td>{{pprofile.att_through_passes_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Key Passes</td>
+								<td>{{pprofile.att_key_passes_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Crosses</td>
+								<td>{{pprofile.att_crosses_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Back Passes</td>
+								<td>{{pprofile.att_back_passes_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Vertical Passes</td>
+								<td>{{pprofile.att_vertical_passes_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Forward Passes</td>
+								<td>{{pprofile.att_forward_passes_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Passes to final third</td>
+								<td>{{pprofile.att_passes_to_final_third_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Passes to Penalty Area</td>
+								<td>{{pprofile.att_pass_to_penalty_area_avg}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="row" ng-if="involvement_subtab=='biDuels'">
+				<div class="col xl4">
+					<table class="striped highlight centered">
+						<thead class="#1976d2 blue darken-2">
+							<tr>
+								<th>Duels</th>
+								<th>&nbsp;</th>
+							</tr>
+						</thead>
+						<tbody class="highlightedcell">
+							<tr>
+								<td class="font-bold">Duels</td>
+								<td>{{pprofile.att_duels_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Defensive Duels</td>
+								<td>{{pprofile.att_defensive_duels_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Offensive Duels</td>
+								<td>{{pprofile.att_offensive_duels_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Pressing Duels per 90</td>
+								<td>{{pprofile.att_pressing_duels_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Loose balls duels per 90</td>
+								<td>{{pprofile.att_loose_ball_duels_avg}}</td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="row" ng-if="involvement_subtab=='biAerial'">
+				<div class="col xl4">
+					<table class="striped highlight centered">
+						<thead class="#1976d2 blue darken-2">
+							<tr>
+								<th>Aerial</th>
+								<th>&nbsp;</th>
+							</tr>
+						</thead>
+						<tbody class="highlightedcell">
+							<tr>
+								<td class="font-bold">Aerial Duels</td>
+								<td>{{pprofile.att_aerial_duels_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Field Aerial Duels</td>
+								<td>{{pprofile.att_field_aerial_duels_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Head Shots</td>
+								<td>{{pprofile.att_head_shots_avg}}</td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="row" ng-if="involvement_subtab=='biSet	Pieces'">
+				<div class="col xl4">
+					<table class="striped highlight centered">
+						<thead class="#1976d2 blue darken-2">
+							<tr>
+								<th>Set Pieces</th>
+								<th>&nbsp;</th>
+							</tr>
+						</thead>
+						<tbody class="highlightedcell">
+							<tr>
+								<td class="font-bold">Free Kicks</td>
+								<td>{{pprofile.att_free_kicks_taken_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Direct Free Kicks</td>
+								<td>{{pprofile.att_direct_free_kicks_taken_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Corners</td>
+								<td>{{pprofile.att_corners_taken_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Penalties</td>
+								<td>{{pprofile.att_penalties_taken_avg}}</td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div class="fixed-action-btn toolbar">
+				<a class="btn-floating btn-large red"> <i
+					class="large material-icons">mode_edit</i>
+				</a>
+				<ul>
+					<li class="waves-effect waves-light"><a
+						ng-click="involvement_subtabselect('biAttack')">Attack</a></li>
+					<li class="waves-effect waves-light"><a
+						ng-click="involvement_subtabselect('biDefence')">Defence</a></li>
+					<li class="waves-effect waves-light"><a
+						ng-click="involvement_subtabselect('biPassing')">Passing</a></li>
+					<li class="waves-effect waves-light"><a
+						ng-click="involvement_subtabselect('biDuels')">Duels</a></li>
+					<li class="waves-effect waves-light"><a
+						ng-click="involvement_subtabselect('biAerial')">Aerial</a></li>
+					<li class="waves-effect waves-light"><a
+						ng-click="involvement_subtabselect('biSet	Pieces')">Set Pieces</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="bProductivity">
+			<div class="row"></div>
+			<div class="row" ng-if="productivity_subtab=='bpAttack'">
+				<div class="col xl4">
+					<table class="striped highlight centered">
+						<thead class="#1976d2 blue darken-2">
+							<tr>
+								<th>Attack</th>
+								<th>&nbsp;</th>
+							</tr>
+						</thead>
+						<tbody class="highlightedcell">
+							<tr>
+								<td class="font-bold">Attacking Actions</td>
+								<td>{{pprofile.att_successful_attacking_actions_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Dribbles</td>
+								<td>{{pprofile.att_successful_dribbles_percent}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Offensive Duels</td>
+								<td>{{pprofile.att_offensive_duel_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Linkup Play</td>
+								<td>{{pprofile.att_successful_linkup_plays_percent}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Accelerations</td>
+								<td>{{pprofile.att_accelerations_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Touch in box</td>
+								<td>{{pprofile.att_touch_in_box_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Shooting</td>
+								<td>{{pprofile.att_shots_on_target_percent}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Shots Far Corner</td>
+								<td>{{pprofile.att_shot_to_far_corner_on_target_percent}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Shots Near Corner</td>
+								<td>{{pprofile.att_shot_to_near_cor_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Head Shots</td>
+								<td>{{pprofile.att_head_shots_on_target_percent}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Goals</td>
+								<td>{{pprofile.att_goals_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Head Goals</td>
+								<td>{{pprofile.att_head_shot_won_90}}</td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="row" ng-if="productivity_subtab=='bpDefence'">
+				<div class="col xl4">
+					<table class="striped highlight centered">
+						<thead class="#1976d2 blue darken-2">
+							<tr>
+								<th>Defence</th>
+								<th>&nbsp;</th>
+							</tr>
+						</thead>
+						<tbody class="highlightedcell">
+							<tr>
+								<td class="font-bold">Defensive Actions</td>
+								<td>{{pprofile.att_successful_defensive_actions_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Defensive Duels</td>
+								<td>{{pprofile.att_defensive_duels_won}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Tackles</td>
+								<td>{{pprofile.att_tackle_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Interceptions</td>
+								<td>{{pprofile.att_interceptions_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Recoveries</td>
+								<td>{{pprofile.att_recoveries_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Clearances</td>
+								<td>{{pprofile.att_clearance_avg}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="row" ng-if="productivity_subtab=='bpPassing'">
+				<div class="col xl4">
+					<table class="striped highlight centered">
+						<thead class="#1976d2 blue darken-2">
+							<tr>
+								<th>Passing</th>
+								<th>&nbsp;</th>
+							</tr>
+						</thead>
+						<tbody class="highlightedcell">
+							<tr>
+								<td class="font-bold">Passes</td>
+								<td>{{pprofile.att_passes_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Short - Medium Passes</td>
+								<td>{{pprofile.att_short_medium_pass_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Long Passes</td>
+								<td>{{pprofile.att_long_passes_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Smart Passes</td>
+								<td>{{pprofile.att_smart_pass_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Through Passes</td>
+								<td>{{pprofile.att_throught_passes_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Key Passes</td>
+								<td>{{pprofile.att_key_pass_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Crosses</td>
+								<td>{{pprofile.att_cross_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Back Passes</td>
+								<td>{{pprofile.att_back_passes_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Vertical Passes</td>
+								<td>{{pprofile.att_vertical_passes_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Forward Passes</td>
+								<td>{{pprofile.att_forward_passes_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Passes to final third</td>
+								<td>{{pprofile.att_passes_to_final_third_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Passes to Penalty Area</td>
+								<td>{{pprofile.att_passes_to_penalty_won_90}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="row" ng-if="productivity_subtab=='bpDuels'">
+				<div class="col xl4">
+					<table class="striped highlight centered">
+						<thead class="#1976d2 blue darken-2">
+							<tr>
+								<th>Duels</th>
+								<th>&nbsp;</th>
+							</tr>
+						</thead>
+						<tbody class="highlightedcell">
+							<tr>
+								<td class="font-bold">Duels</td>
+								<td>{{pprofile.att_duels_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Defensive Duels</td>
+								<td>{{pprofile.att_defensive_duels_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Offensive Duels</td>
+								<td>{{pprofile.att_offensive_duels_won}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Pressing Duels per 90</td>
+								<td>{{pprofile.att_pressing_duels_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Loose balls duels per 90</td>
+								<td>{{pprofile.att_loose_ball_duels_avg}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="row" ng-if="productivity_subtab=='bpAerial'">
+				<div class="col xl4">
+					<table class="striped highlight centered">
+						<thead class="#1976d2 blue darken-2">
+							<tr>
+								<th>Aerial</th>
+								<th>&nbsp;</th>
+							</tr>
+						</thead>
+						<tbody class="highlightedcell">
+							<tr>
+								<td class="font-bold">Aerial Duels</td>
+								<td>{{pprofile.att_aerial_duels_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Field Aerial Duels</td>
+								<td>{{pprofile.att_field_aerial_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Head Shots</td>
+								<td>{{pprofile.att_head_shot_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Head Goals</td>
+								<td>{{pprofile.att_head_goals_avg}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="fixed-action-btn toolbar">
+				<a class="btn-floating btn-large red"> <i
+					class="large material-icons">mode_edit</i>
+				</a>
+				<ul>
+					<li class="waves-effect waves-light"><a
+						ng-click="productivity_subtabselect('bpAttack')">Attack</a></li>
+					<li class="waves-effect waves-light"><a
+						ng-click="productivity_subtabselect('bpDefence')">Defence</a></li>
+					<li class="waves-effect waves-light"><a
+						ng-click="productivity_subtabselect('bpPassing')">Passing</a></li>
+					<li class="waves-effect waves-light"><a
+						ng-click="productivity_subtabselect('bpDuels')">Duels</a></li>
+					<li class="waves-effect waves-light"><a
+						ng-click="productivity_subtabselect('bpAerial')">Aerial</a></li>
+					<li class="waves-effect waves-light"><a
+						ng-click="productivity_subtabselect('bpSet	Pieces')">Set
+							Pieces</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="bLoss">
+			<div class="row" ng-if="productivity_subtab=='bpAttack'">
+				<div class="col xl4">
+					<table class="striped highlight centered">
+						<thead class="#1976d2 blue darken-2">
+							<tr>
+								<th>Attack</th>
+								<th>&nbsp;</th>
+							</tr>
+						</thead>
+						<tbody class="highlightedcell">
+							<tr>
+								<td class="font-bold">Dribbles</td>
+								<td>{{pprofile.att_dribbles_lost_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Offensive Duels</td>
+								<td>{{pprofile.att_offensive_duel_lost_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Linkup Play</td>
+								<td>{{pprofile.att_linkup_plays_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Possession Losses</td>
+								<td>{{pprofile.att_losses_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Dangerous own half losses</td>
+								<td>{{pprofile.att_dangerous_own_half_losses_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Shooting</td>
+								<td>{{pprofile.att_shots_offtarhet_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Shots Far Corner</td>
+								<td>{{pprofile.att_shot_to_far_lost_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Shots Near Corner</td>
+								<td>{{pprofile.att_shot_to_near_lost_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Head Shots</td>
+								<td>{{pprofile.att_head_shot_lost_90}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="row" ng-if="productivity_subtab=='bpDefence'">
+				<div class="col xl4">
+					<table class="striped highlight centered">
+						<thead class="#1976d2 blue darken-2">
+							<tr>
+								<th>Defence</th>
+								<th>&nbsp;</th>
+							</tr>
+						</thead>
+						<tbody class="highlightedcell">
+							<tr>
+								<td class="font-bold">Defensive Duels</td>
+								<td>{{pprofile.att_defensive_duels_lost_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Tackles</td>
+								<td>{{pprofile.att_tackle_lost_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Fouls</td>
+								<td>{{pprofile.att_fouls_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Bookings</td>
+								<td>{{pprofile.att_interceptions_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Yellow Cards</td>
+								<td>{{pprofile.att_yellow_cards_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Red Cards</td>
+								<td>{{pprofile.att_red_cards_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Direct Red Cards</td>
+								<td>{{pprofile.att_direct_red_cards_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Missed Balls</td>
+								<td>{{pprofile.att_missed_balls_avg}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="row" ng-if="productivity_subtab=='bpPassing'">
+				<div class="col xl4">
+					<table class="striped highlight centered">
+						<thead class="#1976d2 blue darken-2">
+							<tr>
+								<th>Passing</th>
+								<th>&nbsp;</th>
+							</tr>
+						</thead>
+						<tbody class="highlightedcell">
+							<tr>
+								<td class="font-bold">Passes</td>
+								<td>{{pprofile.att_passes_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Short - Medium Passes</td>
+								<td>{{pprofile.att_short_medium_pass_lost_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Long Passes</td>
+								<td>{{pprofile.att_long_passes_lost_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Smart Passes</td>
+								<td>{{pprofile.att_smart_pass_lost_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Through Passes</td>
+								<td>{{pprofile.att_throught_passes_lost_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Key Passes</td>
+								<td>{{pprofile.att_key_pass_lost_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Crosses</td>
+								<td>{{pprofile.att_cross_lost_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Back Passes</td>
+								<td>{{pprofile.att_back_passes_lost_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Vertical Passes</td>
+								<td>{{pprofile.att_vertical_passes_lost_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Forward Passes</td>
+								<td>{{pprofile.att_forward_passes_lost_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Passes to final third</td>
+								<td>{{pprofile.att_passes_to_final_third_lost_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Passes to Penalty Area</td>
+								<td>{{pprofile.att_passes_to_penalty_lost_90}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="row" ng-if="productivity_subtab=='bpDuels'">
+				<div class="col xl4">
+					<table class="striped highlight centered">
+						<thead class="#1976d2 blue darken-2">
+							<tr>
+								<th>Duels</th>
+								<th>&nbsp;</th>
+							</tr>
+						</thead>
+						<tbody class="highlightedcell">
+							<tr>
+								<td class="font-bold">Duels</td>
+								<td>{{pprofile.att_duels_lost_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Defensive Duels</td>
+								<td>{{pprofile.att_defensive_duels_lost_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Offensive Duels</td>
+								<td>{{pprofile.att_offensive_duels_lost}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Pressing Duels per 90</td>
+								<td>{{pprofile.att_pressing_duels_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Loose balls duels per 90</td>
+								<td>{{pprofile.att_loose_ball_duels_avg}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="row" ng-if="productivity_subtab=='bpAerial'">
+				<div class="col xl4">
+					<table class="striped highlight centered">
+						<thead class="#1976d2 blue darken-2">
+							<tr>
+								<th>Aerial</th>
+								<th>&nbsp;</th>
+							</tr>
+						</thead>
+						<tbody class="highlightedcell">
+							<tr>
+								<td class="font-bold">Aerial Duels</td>
+								<td>{{pprofile.att_aerial_duels_lost_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Field Aerial Duels</td>
+								<td>{{pprofile.att_field_aerial_lost_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Head Shots</td>
+								<td>{{pprofile.att_head_shot_lost_90}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="fixed-action-btn toolbar">
+				<a class="btn-floating btn-large red"> <i
+					class="large material-icons">mode_edit</i>
+				</a>
+				<ul>
+					<li class="waves-effect waves-light"><a
+						ng-click="productivity_subtabselect('bpAttack')">Attack</a></li>
+					<li class="waves-effect waves-light"><a
+						ng-click="productivity_subtabselect('bpDefence')">Defence</a></li>
+					<li class="waves-effect waves-light"><a
+						ng-click="productivity_subtabselect('bpPassing')">Passing</a></li>
+					<li class="waves-effect waves-light"><a
+						ng-click="productivity_subtabselect('bpDuels')">Duels</a></li>
+					<li class="waves-effect waves-light"><a
+						ng-click="productivity_subtabselect('bpAerial')">Aerial</a></li>
+					<li class="waves-effect waves-light"><a
+						ng-click="productivity_subtabselect('bpSet	Pieces')">Set
+							Pieces</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="bEfficiency">
+			<div class="row" ng-if="productivity_subtab=='bpAttack'">
+				<div class="col xl4">
+					<table class="striped highlight centered">
+						<thead class="#1976d2 blue darken-2">
+							<tr>
+								<th>Attack</th>
+								<th>&nbsp;</th>
+							</tr>
+						</thead>
+						<tbody class="highlightedcell">
+							<tr>
+								<td class="font-bold">Dribbles</td>
+								<td>{{pprofile.att_dribbles_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Offensive Duels</td>
+								<td>{{pprofile.att_offensive_duel_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Linkup Play</td>
+								<td>{{pprofile.att_linkup_plays_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Shooting</td>
+								<td>{{pprofile.att_shots_on_target_percent}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Shots Far Corner</td>
+								<td>{{pprofile.att_shot_to_far_corner_on_target_percent}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Shots Near Corner</td>
+								<td>{{pprofile.att_shot_to_near_cor_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Head Shots</td>
+								<td>{{pprofile.att_head_shot_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Goals</td>
+								<td>{{pprofile.att_goals_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Head Goals</td>
+								<td>{{pprofile.att_head_goals_avg}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="row" ng-if="productivity_subtab=='bpDefence'">
+				<div class="col xl4">
+					<table class="striped highlight centered">
+						<thead class="#1976d2 blue darken-2">
+							<tr>
+								<th>Defence</th>
+								<th>&nbsp;</th>
+							</tr>
+						</thead>
+						<tbody class="highlightedcell">
+							<tr>
+								<td class="font-bold">Defensive Duels</td>
+								<td>{{pprofile.att_defensive_duels_won}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Tackles</td>
+								<td>{{pprofile.att_tackle_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Fouls</td>
+								<td>{{pprofile.att_fouls_avg}}</td>
+							</tr>
+							
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="row" ng-if="productivity_subtab=='bpPassing'">
+				<div class="col xl4">
+					<table class="striped highlight centered">
+						<thead class="#1976d2 blue darken-2">
+							<tr>
+								<th>Passing</th>
+								<th>&nbsp;</th>
+							</tr>
+						</thead>
+						<tbody class="highlightedcell">
+							<tr>
+								<td class="font-bold">Passes</td>
+								<td>{{pprofile.att_passes_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Short - Medium Passes</td>
+								<td>{{pprofile.att_short_medium_pass_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Long Passes</td>
+								<td>{{pprofile.att_long_passes_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Smart Passes</td>
+								<td>{{pprofile.att_smart_pass_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Through Passes</td>
+								<td>{{pprofile.att_throught_passes_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Key Passes</td>
+								<td>{{pprofile.att_key_pass_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Crosses</td>
+								<td>{{pprofile.att_cross_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Back Passes</td>
+								<td>{{pprofile.att_back_passes_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Vertical Passes</td>
+								<td>{{pprofile.att_vertical_passes_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Forward Passes</td>
+								<td>{{pprofile.att_forward_passes_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Passes to final third</td>
+								<td>{{pprofile.att_passes_to_final_third_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Passes to Penalty Area</td>
+								<td>{{pprofile.att_passes_to_penalty_won_90}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="row" ng-if="productivity_subtab=='bpDuels'">
+				<div class="col xl4">
+					<table class="striped highlight centered">
+						<thead class="#1976d2 blue darken-2">
+							<tr>
+								<th>Duels</th>
+								<th>&nbsp;</th>
+							</tr>
+						</thead>
+						<tbody class="highlightedcell">
+							<tr>
+								<td class="font-bold">Duels</td>
+								<td>{{pprofile.att_duels_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Defensive Duels</td>
+								<td>{{pprofile.att_defensive_duels_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Offensive Duels</td>
+								<td>{{pprofile.att_offensive_duels_won}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Pressing Duels per 90</td>
+								<td>{{pprofile.att_pressing_duels_avg}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Loose balls duels per 90</td>
+								<td>{{pprofile.att_loose_ball_duels_avg}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="row" ng-if="productivity_subtab=='bpAerial'">
+				<div class="col xl4">
+					<table class="striped highlight centered">
+						<thead class="#1976d2 blue darken-2">
+							<tr>
+								<th>Aerial</th>
+								<th>&nbsp;</th>
+							</tr>
+						</thead>
+						<tbody class="highlightedcell">
+							<tr>
+								<td class="font-bold">Aerial Duels</td>
+								<td>{{pprofile.att_aerial_duels_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Field Aerial Duels</td>
+								<td>{{pprofile.att_field_aerial_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Head Shots</td>
+								<td>{{pprofile.att_head_shot_won_90}}</td>
+							</tr>
+							<tr>
+								<td class="font-bold">Head Goals</td>
+								<td>{{pprofile.att_goals_avg}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+			<div class="fixed-action-btn toolbar">
+				<a class="btn-floating btn-large red"> <i
+					class="large material-icons">mode_edit</i>
+				</a>
+				<ul>
+					<li class="waves-effect waves-light"><a
+						ng-click="productivity_subtabselect('bpAttack')">Attack</a></li>
+					<li class="waves-effect waves-light"><a
+						ng-click="productivity_subtabselect('bpDefence')">Defence</a></li>
+					<li class="waves-effect waves-light"><a
+						ng-click="productivity_subtabselect('bpPassing')">Passing</a></li>
+					<li class="waves-effect waves-light"><a
+						ng-click="productivity_subtabselect('bpDuels')">Duels</a></li>
+					<li class="waves-effect waves-light"><a
+						ng-click="productivity_subtabselect('bpAerial')">Aerial</a></li>
+					<li class="waves-effect waves-light"><a
+						ng-click="productivity_subtabselect('bpSet	Pieces')">Set
+							Pieces</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>

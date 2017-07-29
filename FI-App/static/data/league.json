@@ -1,0 +1,1478 @@
+﻿﻿{"league":
+	[
+		
+		{
+			"lea" : {
+				"area" : "Albania",
+				"comp" : "Superliga"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Albania",
+				"comp" : "1st Division"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Algeria",
+				"comp" : "Ligue 1"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Argentina",
+				"comp" : "Primera Division"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Argentina",
+				"comp" : "Prim B Nacional"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Argentina",
+				"comp" : "Prim B Metro"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Argentina",
+				"comp" : "Primera C"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Armenia",
+				"comp" : "Premier League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Australia",
+				"comp" : "A-League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Austria",
+				"comp" : "1. Liga"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Austria",
+				"comp" : "Bundesliga"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Austria",
+				"comp" : "Regionalliga"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Austria",
+				"comp" : "Jugendliga U18"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Austria",
+				"comp" : "Landesliga"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Azerbaijan",
+				"comp" : "Premyer Liqa"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Azerbaijan",
+				"comp" : "Reserve League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Bahrain",
+				"comp" : "Premier League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Belarus",
+				"comp" : "Premier League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Belgium",
+				"comp" : "Third Amateur Division"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Belgium",
+				"comp" : "First Division A"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Belgium",
+				"comp" : "First Division B"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Belize",
+				"comp" : "Premier League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Bolivia",
+				"comp" : "LFPB"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Bosnia and Herzegovina",
+				"comp" : "Premier Liga"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Brazil",
+				"comp" : "Cearense 1"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Brazil",
+				"comp" : "Carioca 1"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Brazil",
+				"comp" : "Paulista A3"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Brazil",
+				"comp" : "Paulista A2"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Brazil",
+				"comp" : "Copa do Nordeste"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Brazil",
+				"comp" : "Primeira Liga"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Brazil",
+				"comp" : "Catarinense 1"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Brazil",
+				"comp" : "Paulista A1"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Brazil",
+				"comp" : "Carioca U20"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Brazil",
+				"comp" : "Gaucho 1"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Brazil",
+				"comp" : "Paranaense 1"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Brazil",
+				"comp" : "Piauiense"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Brazil",
+				"comp" : "Catarinense 2"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Bulgaria",
+				"comp" : "First League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Bulgaria",
+				"comp" : "Second League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Bulgaria",
+				"comp" : "Elite U19"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Burkina Faso",
+				"comp" : "1ere Division"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Chile",
+				"comp" : "Primera Division"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Chile",
+				"comp" : "Primera B"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "China PR",
+				"comp" : "China League One"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "China PR",
+				"comp" : "CSL"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Colombia",
+				"comp" : "Primera A"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Colombia",
+				"comp" : "Primera B"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Congo DR",
+				"comp" : "Super Ligue"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Costa Rica",
+				"comp" : "Primera Division"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Cote d'Ivoire",
+				"comp" : "Ligue 1"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Croatia",
+				"comp" : "1. HNL Juniori"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Croatia",
+				"comp" : "1. HNL"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Croatia",
+				"comp" : "2. HNL"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Cuba",
+				"comp" : "Primera Division"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Cyprus",
+				"comp" : "1. Division"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Czech Republic",
+				"comp" : "FNL"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Czech Republic",
+				"comp" : "Czech Liga"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Czech Republic",
+				"comp" : "1. Liga U19"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Denmark",
+				"comp" : "Superliga"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Denmark",
+				"comp" : "U19 Ligaen"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Denmark",
+				"comp" : "U17 Ligaen"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Denmark",
+				"comp" : "1st Division"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Denmark",
+				"comp" : "U19 Division"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Denmark",
+				"comp" : "U17 Division"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Denmark",
+				"comp" : "Reserve League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Denmark",
+				"comp" : "2nd Division"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Ecuador",
+				"comp" : "Primera A"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Egypt",
+				"comp" : "Premier League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "El Salvador",
+				"comp" : "Primera Division"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "England",
+				"comp" : "Premier League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "England",
+				"comp" : "U18 Premier League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "England",
+				"comp" : "League One"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "England",
+				"comp" : "Championship"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "England",
+				"comp" : "National League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "England",
+				"comp" : "League Two"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "England",
+				"comp" : "Premier League 2 (Division 1)"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "England",
+				"comp" : "Nike Academy"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "England",
+				"comp" : "National League N / S"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "England",
+				"comp" : "Premier League 2 (Division 2)"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "England",
+				"comp" : "Youth Alliance"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "England",
+				"comp" : "Professional Development League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "England",
+				"comp" : "Non League Premier"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "England",
+				"comp" : "U18 Professional Development League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Estonia",
+				"comp" : "Meistriliiga"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Europe",
+				"comp" : "Future Talents Cup U17"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "FYR Macedonia",
+				"comp" : "First League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Finland",
+				"comp" : "Veikkausliiga"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "France",
+				"comp" : "Ligue 2"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "France",
+				"comp" : "Ligue 1"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "France",
+				"comp" : "National"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "France",
+				"comp" : "Championnat National U19"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "France",
+				"comp" : "CFA 2"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "France",
+				"comp" : "CFA"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Germany",
+				"comp" : "3. Liga"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Germany",
+				"comp" : "Regionalliga"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Germany",
+				"comp" : "Bundesliga"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Germany",
+				"comp" : "U19 Bundesliga"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Germany",
+				"comp" : "2. Bundesliga"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Germany",
+				"comp" : "U-17 Bundesliga"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Germany",
+				"comp" : "Oberliga"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Greece",
+				"comp" : "Super League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Greece",
+				"comp" : "Football League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Greece",
+				"comp" : "Super League K20"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Guatemala",
+				"comp" : "Liga Nacional"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Guinea",
+				"comp" : "Ligue 1"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Honduras",
+				"comp" : "Liga Nacional"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Hong Kong",
+				"comp" : "Premier League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Hungary",
+				"comp" : "NB I"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Hungary",
+				"comp" : "NB II"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Hungary",
+				"comp" : "U19 League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Hungary",
+				"comp" : "NB III"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "India",
+				"comp" : "Indian Super League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "India",
+				"comp" : "Calcutta Premier Division A"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "India",
+				"comp" : "I-League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Iran",
+				"comp" : "Persian Gulf Pro League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Iran",
+				"comp" : "Azadegan League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Iraq",
+				"comp" : "Iraqi League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Israel",
+				"comp" : "Liga Leumit"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Israel",
+				"comp" : "Ligat ha'Al"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Israel",
+				"comp" : "U19 Elite Division"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Italy",
+				"comp" : "Lega Pro"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Italy",
+				"comp" : "Serie A"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Italy",
+				"comp" : "Campionato Nazionale Primavera"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Italy",
+				"comp" : "Serie B"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Italy",
+				"comp" : "Eccellenza"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Italy",
+				"comp" : "Campionato Nazionale Under 17 A&B"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Italy",
+				"comp" : "Serie D"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Italy",
+				"comp" : "Campionato Nazionale Allievi Lega Pro"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Italy",
+				"comp" : "Promozione"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Japan",
+				"comp" : "J2 League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Japan",
+				"comp" : "J1 League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Jordan",
+				"comp" : "League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Kazakhstan",
+				"comp" : "Premier League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Kazakhstan",
+				"comp" : "Reserve League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Korea Republic",
+				"comp" : "K League Classic"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Korea Republic",
+				"comp" : "K League Challenge"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Kuwait",
+				"comp" : "Premier League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Latvia",
+				"comp" : "Virsliga"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Lebanon",
+				"comp" : "Premier League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Libya",
+				"comp" : "Premier League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Lithuania",
+				"comp" : "1 Lyga"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Lithuania",
+				"comp" : "A Lyga"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Luxembourg",
+				"comp" : "National Division"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Malaysia",
+				"comp" : "Super League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Malta",
+				"comp" : "Premier League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Mexico",
+				"comp" : "Ascenso MX"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Mexico",
+				"comp" : "Liga MX"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Mexico",
+				"comp" : "U20 League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Moldova",
+				"comp" : "Divizia Na?ionala"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Montenegro",
+				"comp" : "First League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Morocco",
+				"comp" : "Botola Pro"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Netherlands",
+				"comp" : "Eerste Divisie"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Netherlands",
+				"comp" : "Eredivisie"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Netherlands",
+				"comp" : "Tweede Divisie"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Netherlands",
+				"comp" : "Eredivisie U19"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Nicaragua",
+				"comp" : "Primera Division"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Norway",
+				"comp" : "Obos Ligaen"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Norway",
+				"comp" : "Eliteserien"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Oman",
+				"comp" : "Professional League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Panama",
+				"comp" : "LPF"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Paraguay",
+				"comp" : "Division Profesional"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Peru",
+				"comp" : "Primera Division"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Poland",
+				"comp" : "Ekstraklasa"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Poland",
+				"comp" : "I Liga"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Poland",
+				"comp" : "Central Youth League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Portugal",
+				"comp" : "Primeira Liga"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Portugal",
+				"comp" : "Segunda Liga"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Portugal",
+				"comp" : "Campeonato Safina"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Portugal",
+				"comp" : "Campeonato de Portugal Prio"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Portugal",
+				"comp" : "Juniores U17"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Portugal",
+				"comp" : "Juniores U19"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Qatar",
+				"comp" : "Stars League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Qatar",
+				"comp" : "Q League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Romania",
+				"comp" : "Liga II"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Romania",
+				"comp" : "Liga I"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Romania",
+				"comp" : "Liga III"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Russia",
+				"comp" : "Premier League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Russia",
+				"comp" : "FNL"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Russia",
+				"comp" : "PFL"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Russia",
+				"comp" : "U21 Premier League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Russia",
+				"comp" : "Irtysh Cup"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Saudi Arabia",
+				"comp" : "Pro League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Scotland",
+				"comp" : "League Two"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Scotland",
+				"comp" : "Premiership"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Scotland",
+				"comp" : "Championship"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Scotland",
+				"comp" : "Development League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Scotland",
+				"comp" : "League One"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Senegal",
+				"comp" : "Ligue 1"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Serbia",
+				"comp" : "Super Liga"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Serbia",
+				"comp" : "Prva Liga"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Singapore",
+				"comp" : "S.League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Slovakia",
+				"comp" : "Super Liga"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Slovakia",
+				"comp" : "2. liga"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Slovakia",
+				"comp" : "U19 League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Slovakia",
+				"comp" : "3. liga"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Slovenia",
+				"comp" : "1. SNL"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Slovenia",
+				"comp" : "2. SNL"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Slovenia",
+				"comp" : "3. SNL"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Slovenia",
+				"comp" : "1. SML U19"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "South Africa",
+				"comp" : "PSL"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "South Africa",
+				"comp" : "1st Division"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Spain",
+				"comp" : "Segunda B"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Spain",
+				"comp" : "Segunda Division"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Spain",
+				"comp" : "Primera Division"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Spain",
+				"comp" : "Tercera Division"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Spain",
+				"comp" : "Division de Honor Juvenil"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Sweden",
+				"comp" : "Superettan"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Sweden",
+				"comp" : "Allsvenskan"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Switzerland",
+				"comp" : "Super League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Switzerland",
+				"comp" : "Challenge League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Switzerland",
+				"comp" : "1. Liga Classic"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Switzerland",
+				"comp" : "U18 League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Syria",
+				"comp" : "Premier League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Thailand",
+				"comp" : "Thai League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Thailand",
+				"comp" : "Thai League 2"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Trinidad and Tobago",
+				"comp" : "T & T Pro League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Tunisia",
+				"comp" : "Ligue 1"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Turkey",
+				"comp" : "Super Lig"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Turkey",
+				"comp" : "2. Lig"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Turkey",
+				"comp" : "1. Lig"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Turkey",
+				"comp" : "3. Lig"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Turkey",
+				"comp" : "U21 Super Lig"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Turkey",
+				"comp" : "U19 Elit Ligi"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "USA",
+				"comp" : "NASL"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "USA",
+				"comp" : "Diamond Cup"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "USA",
+				"comp" : "MLS"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "USA",
+				"comp" : "USL"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "USA",
+				"comp" : "NCAA Mens Soccer"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Uganda",
+				"comp" : "Premier League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Ukraine",
+				"comp" : "Persha Liga"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Ukraine",
+				"comp" : "Premier League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Ukraine",
+				"comp" : "Druha Liga"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Ukraine",
+				"comp" : "U19 League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Ukraine",
+				"comp" : "U21 League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Ukraine",
+				"comp" : "U17 League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "United Arab Emirates",
+				"comp" : "Arabian Gulf League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "United Arab Emirates",
+				"comp" : "Division 1"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Uruguay",
+				"comp" : "Primera Division"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Uzbekistan",
+				"comp" : "PFL"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Venezuela",
+				"comp" : "Primera Division"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Vietnam",
+				"comp" : "V.League 1"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Wales",
+				"comp" : "Premier League"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "World",
+				"comp" : "Other Friendlies"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "World",
+				"comp" : "Copa Chivas Internacional U18"
+			}
+		},
+		{
+			"lea" : {
+				"area" : "Zambia",
+				"comp" : "Super League"
+			}
+		}
+	]
+
+
+        
+}

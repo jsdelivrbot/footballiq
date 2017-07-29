@@ -1,0 +1,19 @@
+<!-- 	<table ng-table="vm.tableParams" class="table" show-filter="true">
+    <tr ng-repeat="user in $data track by user._id">
+        <td title="'Name'" filter="{ name: 'text'}" sortable="'name'">{{user.name}}</td>
+        <td title="'Age'" filter="{ age: 'number'}" sortable="'age'">{{user.age}}</td>
+    </tr>
+</table>
+ -->
+<!-- <table ng-table-dynamic="vm.tableParams with vm.cols" class="table table-condensed table-bordered table-striped">
+        <tr ng-repeat="row in $data">
+          <td ng-repeat="col in $columns">{{row[col.field]}}</td>
+        </tr>
+      </table>
+	<div id="example-table"></div>
+	<input id="sortfield" ng-model="sortfield" ng-click="toggleSort(sortfield)"type="text"/> -->
+	<div id="example-table"></div>
+	<script>
+	inittabulator();
+	</script>
+	<input id="sortfield" class="hiddenfield" ng-model="sortfield" ng-click="toggleSort(sortfield)"type="text"/>

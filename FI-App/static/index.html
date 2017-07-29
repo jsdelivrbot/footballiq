@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>Scouts</title>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+<!--Import materialize.css-->
+<link type="text/css" rel="stylesheet"
+	href="mat/css/materialize.min.css" media="screen,projection" />
+
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- Your custom styles (optional) -->
+<link href="css/index.css" rel="stylesheet">
+
+</head>
+<body class="login-img " ng-app="login" >
+	<div class="row" ng-controller="logincontroller" ng-cloak>
+		<div class="col xl4 offset-xl7">
+			<div class="card light-blue lighten-4 container-fluid">
+				<div class="card-image">
+              <img src="image/LOGO.jpg">
+            </div>
+				<div class="card-tabs light-blue lighten-4 container-fluid">
+					<ul class="tabs tabs-fixed-width">
+					<li class="tab disabled"><a 
+							href="#2"></a></li>
+						<li class="tab"><a href="#register">Register</a></li>
+						<li class="tab"><a class="active"
+							href="#login">Login</a></li>
+						<li class="tab disabled"><a href="#1"></a></li>
+						
+					</ul>
+				</div>
+				<div class="card-content grey lighten-4">
+					<div id="register">
+						<div class="row container-fluid">
+						<div class="font-red-error">{{errorr}}</div>
+						<div class="font-green-succ">{{succ}}</div>
+							<div class="col s12">
+								<div class="row">
+									<div class="input-field">
+										<input id="name" type="text" ng-model="name" class="validate"> <label
+											for="name">Full Name</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field">
+										<input id="email" type="text" ng-model="email" class="validate"> <label
+											for="email">Username</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field">
+										<input id="regpassword1" type="password" ng-model="passw"class="validate">
+										<label for="regpassword1">Password</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field">
+										<input id="regpassword2" type="password" ng-model="passwc"class="validate">
+										<label for="regpassword2">Confirm Password</label>
+									</div>
+								</div>
+								<div ng-if="(passw!=passwc)" class="font-red-error"> Passwords Do not match</div>
+								<div class="row">
+									<button class="waves-effect waves-light btn font-bold"ng-click="register()"><i
+										class="material-icons right" >send</i> 
+										 Register </button>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div id="login">
+						<div class="row container-fluid">
+						<p class="font-red-error">{{error}}</p>
+							<div class="col s12">
+								<div class="row">
+									<div class="input-field">
+										<input id="emailId" type="text" ng-model="uname" class="validate"> <label
+											for="emailId">Username</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field">
+										<input id="password" type="password" ng-model="pass"class="validate">
+										<label for="password">Password</label>
+									</div>
+								</div>
+								<div class="row">
+									<a ng-click="login()" class="waves-effect waves-light btn font-bold"><i
+										class="material-icons right">send</i> 
+										 Login </a>
+										
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Import jQuery before materialize.js-->
+<script type="text/javascript"
+	src="js/jquery-3.2.1.js"></script>
+	<script type="text/javascript"
+	src="js/angular.js"></script>
+		<script type="text/javascript"
+	src="mat/js/angular-materialize.js"></script>
+			
+	<script type="text/javascript" src="js/loginapp.js"></script>
+	<script type="text/javascript" src="mat/js/materialize.min.js"></script>
+	
+</body>
+
+
+</html>
